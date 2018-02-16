@@ -23,3 +23,18 @@ router.get('/rudiments', function(req, res) {
 router.get('/almanac', function(req, res) {
   res.render('pages/almanac');
 });
+
+// route for advanced
+router.get('/advanced', function(req, res) {
+  res.render('pages/advanced');
+});
+
+// route for about
+router.get('/about', function(req, res) {
+  res.render('pages/about');
+});
+
+// route for advanced
+router.get('/inspiration', function(req, res) {
+  res.render('pages/inspiration');
+});
