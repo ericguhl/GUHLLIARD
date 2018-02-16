@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>A to Z Shapes</title>
+  <title>A Z Shapes</title>
   <% include ../partials/head %>
 </head>
 </html>
@@ -365,15 +365,17 @@
       <span class="w3-tag w3-xlarge w3-amber w3-text-white">& </span>
       <p>Count these out as above, with numbers denoting beats and ampersands denoting half-beats(the hihats) </p>
     </blockquote>
-    <div class="w3-panel">
-      <div class="w3-card w3-pale-red w3-border-red w3-leftbar w3-rightbar">
-        <div class="w3-container">
-          <p>
-            If you must skip the Rudiments section (which I beseech you not to, as it's a 10 min investment for a foundation to save you headache down the line), remember these 3 tidbits of information.
-          </p>
+    <a href="/rudiments" style="text-decoration: none">
+      <div class="w3-panel">
+        <div class="w3-hover-shadow w3-pale-red w3-border-red w3-leftbar w3-rightbar">
+          <div class="w3-container">
+            <p>
+              If you must skip the Rudiments section (which I beseech you not to, as it's a 10 min investment for a foundation to save you headache down the line), remember these 3 tidbits of information.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </a>
   </div>
 </div>
 
@@ -471,8 +473,6 @@
                 <h6>Count 1</h6>
               </header>
               <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop1.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop1').style.display='block'"/>
-              <div class="w3-container">
-              </div>
             </div>
           </div>
           <!-- Count 1& -->
@@ -482,8 +482,6 @@
                 <h6>Count &</h6>
               </header>
               <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop2.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop1a').style.display='block'"/>
-              <div class="w3-container">
-              </div>
             </div>
           </div>
           <!-- Count 2 -->
@@ -493,8 +491,6 @@
                 <h6>Count 2</h6>
               </header>
               <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop3.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop2').style.display='block'"/>
-              <div class="w3-container">
-              </div>
             </div>
           </div>
           <!-- Count 2& -->
@@ -504,8 +500,6 @@
                 <h6>Count &</h6>
               </header>
               <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop4.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop2a').style.display='block'"/>
-              <div class="w3-container">
-              </div>
             </div>
           </div>
           <!-- Count 3 -->
@@ -515,8 +509,6 @@
                 <h6>Count 3</h6>
               </header>
               <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop5.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop3').style.display='block'"/>
-              <div class="w3-container">
-              </div>
             </div>
           </div>
           <!-- Count 3& -->
@@ -526,8 +518,6 @@
                 <h6>Count &</h6>
               </header>
               <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop6.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop3a').style.display='block'"/>
-              <div class="w3-container">
-              </div>
             </div>
           </div>
           <!-- Count 4 -->
@@ -537,8 +527,6 @@
                 <h6>Count 4</h6>
               </header>
               <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop7.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop4').style.display='block'"/>
-              <div class="w3-container">
-              </div>
             </div>
           </div>
           <!-- Count 4& -->
@@ -548,15 +536,13 @@
                 <h6>Count &</h6>
               </header>
               <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop8.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop4a').style.display='block'"/>
-              <div class="w3-container">
-              </div>
             </div>
           </div>
         </div>
         <!-- Youtube Vid -->
-        <div class="w3-container w3-center w3-padding">
+        <!-- <div class="w3-container w3-center w3-padding">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/KESEm6zI7VM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
+        </div> -->
       </div>
       <div id="StutterRearLoopDeLoopMoveModal" class="w3-modal" onclick="this.style.display='none'">
         <div class="w3-modal-content w3-animate-zoom">
@@ -857,6 +843,9 @@
     </div>
   </div>
 </div>
+
+<!-- MOVE MODALS -->
+<% include ../partials/movemodals %>
 
 <footer>
     <% include ../partials/footer %>

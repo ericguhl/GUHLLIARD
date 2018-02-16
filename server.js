@@ -7,49 +7,9 @@ var port = 8080;
 app.set('view engine', 'ejs');
 // app.use(expressLayouts);
 
-
-
 // route our app
-// var router = require('./app/routes');
-// app.use('/', router);
-
-
-
-
-
-// route for homepage
-app.get('/', function(req, res) {
-  res.status(200).render('pages/index');
-  // res.sendFile(path.join(__dirname, '../public/views/index.html'));
-});
-
-// route for rudiments
-app.get('/rudiments', function(req, res) {
-  res.status(200).render('pages/rudiments');
-});
-
-// route for almanac
-app.get('/almanac', function(req, res) {
-  res.status(200).render('pages/almanac');
-});
-
-// route for advanced
-app.get('/advanced', function(req, res) {
-  res.status(200).render('pages/advanced');
-});
-
-// route for about
-app.get('/about', function(req, res) {
-  res.status(200).render('pages/about');
-});
-
-// route for advanced
-app.get('/inspiration', function(req, res) {
-  res.status(200).render('pages/inspiration');
-});
-
-
-
+var router = require('./app/routes');
+app.use('/', router);
 
 // set static files
 app.use(express.static(__dirname + '/public'));
@@ -58,3 +18,9 @@ app.use(express.static(__dirname + '/public'));
 app.listen(port, function() {
   console.log('app started');
 });
+
+// start createServer
+// var server = app.listen(process.env.PORT || '8080', function() {
+//   console.log('App listening on port %s', server.address().port);
+//   console.log('Press CTRL+C to quit');
+// });
