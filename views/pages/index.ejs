@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A to Z Shapes</title>
+  <% include ../partials/head %>
+</head>
+</html>
+
+<header>
+  <% include ../partials/header %>
+</header>
+
+<!-- COVER PHOTO -->
+<!-- <div class="w3-display-container">
+  <img src="../img/LAAerial.jpg" style="width: 100%"/>
+  <span class="w3-tag w3-padding w3-xxlarge w3-opacity-min w3-card-2 w3-display-middle">
+    Shuffle Like a Pro in No Time
+  </span>
+</div> -->
+
+<!-- COLLAGE -->
+<div class="w3-display-container w3-margin-top">
+  <div class="w3-row-padding">
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/l1KcRlowidVO479yo/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('ATPCheckMyKicksMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/xThtad9rqm1ztfbORG/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('ATPMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/xThtas1SeDXOOBk4ak/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('ATPJumpMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3ohs4gAdLVZNHc6xY4/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('CCSwitcherooMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/l4pTsbSe3lZ6wwR0I/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('CCToePunchOutMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3ohs4mI9STBZtHMvC0/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('CCToeSliceMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3ohs4eVr3m577LYiGs/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('CCMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/l4pT4a6mVBWX90TwQ/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('CutsReverseMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3o7WIK3IQszqtNO1xu/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('CutsShimmyLegMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3ohs4ssTjK2PMbCNB6/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('CutsToeHeelBounceMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/xUOwG83Op1zOYymbkc/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('CutsMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3ohs4uSYqPwP0H9Bdu/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('DDCorkscrewMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3o7WIs2nJg47wKDDVK/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('DDKickStandsMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/xThtap9IUoGwgXzQre/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('DDToeStandsMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3o7WIxiWBfMt3jXfr2/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('DDMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/l4pT3xutHjVQDmUO4/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('HeelOutStompsMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3o7WIx5esyDCv4aDyo/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('HitThemFolksMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/xThtaoLNc308XAtwmQ/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('LeanerMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3o7WIG9b2kO6BinaPS/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('LeanerFrontsMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/xThtaa4lughIHnqXq8/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('LeanerHalfMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/xUOwGhLsCw0KEnjMc0/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('MillyRockMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/xUOwG3LVKgJtdmcu5O/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('MoonshuffleMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/26DNjVld8nk85sonu/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('MoonspinMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3o7WIswEtmybCl7ln2/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('MoonwalkMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/26DN2JSBAp2NrfGtW/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('RoundaboutStompsMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/xUOwG5DtjrKdQg5GYU/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('RMHeelsMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/xUOwGbnlguFxzmRkLS/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('RMReverseMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/26DNjSyRvJqY11hxS/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('RMMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3ohs4uRmAXomXjs0aA/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('SlideInsideFootMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/xUOwFS6heBIMFNwX8Q/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('SlideOutsideFootMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3ohs4bx9j7OeEZXdug/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('ShimmyToePogoMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3o7WIzL8FimiddtisE/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('ShimmyOneWayMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/l0NgQURu0xckmxeqA/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('ShimmyMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/26DNfbFyxrzpR4Fxe/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('SchmoneyMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3ohs4u879sZAn5QpOM/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('Spin360Spin360ToesMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/l4pTnAHu5Td9hLwu4/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('Spin360MoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/l4pSVIJPZqAejW2dO/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('SpinBackwards180MoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/xUOwGos6aH78RM6UuI/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('SpinKickToesMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/l4pT4MtUnAKA3F8Fa/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('SpinKickMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3o7WIsDjgoSqsFBiCs/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('StutterKickAboutFaceMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3o7WIxWVObjOktqmty/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('StutterFrontLoopDeLoopMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3ohs4yA0zAwL6SdAyY/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('StutterFrontMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/xTht9ZRH3jNOKyGCdO/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('SpinOutsideFootMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/xUOwGb4UdInFx2O1MI/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('SpinInsideFootMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/xUOwGaHBi1hLzmlPHO/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoopMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3o7WIoJXsQAjT3JbBS/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('StutterRearMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/3o7WIFKbFOWUzyc9Hi/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('SpinKickToesMoveModal').style.display='block'"/>
+    </div>
+    <div class="w3-col s3 l2 w3-margin-bottom w3-hover-opacity">
+      <img class="w3-bottombar w3-topbar w3-leftbar w3-rightbar w3-border-green" src="https://media.giphy.com/media/l4pTpHa91UYVyGVa0/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('MoonshuffleMoveModal').style.display='block'"/>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 1: SUPREME -->
+<div class="w3-container w3-padding-64">
+  <div class="w3-content" style="width: 100%">
+    <h1>CUT THE TEDIUM</h1>
+    <p style="margin-bottom: 30px">
+      Cut out the tedium involved in learning how to shuffle. With this comprehensive, exhaustive almanac/guide, you can cut to the chase in learning how to shuffle by choosing what you want to learn, when you want to learn it. This is the only resource you’ll need to get on your feet.
+    </p>
+
+    <!-- TILES -->
+    <div class="w3-row-padding">
+      <!-- Medium Matters -->
+      <div class="w3-col w3-margin-bottom m6">
+        <div class="w3-card">
+          <header class="w3-bar w3-blue">
+            <i class="w3-bar-item w3-xxlarge fa fa-trash"></i>
+            <span class="w3-bar-item w3-xlarge">Mediums Matter</span>
+          </header>
+          <div class="w3-container">
+            <p>
+               Quality of medium & instructor define how well/quickly you learn. AZShapes' Almanac format breaks down specifically what you need to know for each specific move and get you practicing the correct techniques the fastest.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Paradox of Choice -->
+      <div class="w3-col w3-margin-bottom m6">
+        <div class="w3-card">
+          <header class="w3-bar w3-green">
+            <i class="w3-bar-item w3-xxlarge fa fa-hourglass"></i>
+            <span class="w3-bar-item w3-xlarge">Paradox of Choice</span>
+          </header>
+          <div class="w3-container">
+            <p>
+               Don't waste time learning from subpar resources that leave you to fill in the gaps. AZShapes' comprehensive methodology will give you the highest return on your time and provides you everything you need to know.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Knowledge = Power -->
+      <div class="w3-col w3-margin-bottom m6">
+        <div class="w3-card">
+          <header class="w3-bar w3-amber w3-text-white">
+            <i class="w3-bar-item w3-xxlarge fa fa-book"></i>
+            <span class="w3-bar-item w3-xlarge">Knowledge is Power</span>
+          </header>
+          <div class="w3-container">
+            <p>
+               There's no point in figuring out thru trial and error yourself what others have already found out for you. AZShapes breaks down everything there is to know about shapes so that you can sooner start inventing new moves yourself.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Anyone Can Learn -->
+      <div class="w3-col w3-margin-bottom m6">
+        <div class="w3-card">
+          <header class="w3-bar w3-red">
+            <i class="w3-bar-item w3-xxlarge fa fa-star"></i>
+            <span class="w3-bar-item w3-xlarge">Anyone Can Learn</span>
+          </header>
+          <div class="w3-container">
+            <p>
+               I'm here to set the record straight and say that everyone experiences that initial awkwardness when learning. I felt very awkward and unwieldy myself each step of the way. But that truly does give way to fluency sooner than you'd think.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 2: WHY LEARN -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-content">
+    <!-- Why Learn -->
+    <h1>WHY LEARN?</h1>
+    <div class="w3-hide-small">
+      <div class="w3-cell-row">
+        <div class="w3-cell w3-container w3-black w3-border-right w3-button w3-large w3-padding-large tablink" onclick="openBen(event, 'Exercise')">Yo Heart Rate</div>
+        <div class="w3-cell w3-container w3-green w3-border-right w3-button w3-large w3-padding-large tablink" onclick="openBen(event, 'Life')">Feelin Content</div>
+        <div class="w3-cell w3-container w3-green w3-border-right w3-button w3-large w3-padding-large tablink" onclick="openBen(event, 'Mood')">Boost Ya Mood</div>
+        <div class="w3-cell w3-container w3-green w3-button w3-large w3-padding-large tablink" onclick="openBen(event, 'Dope')">Looks Dopee</div>
+      </div>
+      <!-- Containers -->
+      <div id="Exercise" class="w3-container w3-margin-top ben">
+        <h2>Exercise You Don't Dread</h2>
+        <p>
+          When you hit the treadmill or stairmaster, you just stay there waiting for the workout to pass, with nothing to concentrate on except the passing of time. When you shuffle tho, time ceases to exist and you get in some great cardio without even noticing.
+        </p>
+      </div>
+      <div id="Life" class="w3-container w3-margin-top ben" style="display: none">
+        <h2>Life Satisfaction</h2>
+        <p>
+          With each roadblocks you break thru and milestone you hit, you will feel a sense of accomplishment and personal satisfaction with your ability looking back. Overcoming one barrier will make you more confident in overcoming others, in shuffling or any other domain.
+        </p>
+      </div>
+      <div id="Mood" class="w3-container w3-margin-top ben" style="display: none">
+        <h2>Mood Improvement</h2>
+        <p>
+          Exercise, dancing, and music together release chemicals in your brain that literally make you feel happy. Not just your mood, but others' who watch you as well: because of humans affinity for rhythm and order, watching dancing is delightful.
+        </p>
+      </div>
+      <div id="Dope" class="w3-container w3-margin-top ben" style="display: none">
+        <h2>Looks Dope</h2>
+        <p>
+          Kill your next festival, shoot a creative choreography, blow away your next wedding - shuffling is dope. Dancing and music permeate the fabric of our society and characterize us as human - they form a currency of our culture, and are an integral form of art that we use to communicate the contents of our psyche.
+        </p>
+      </div>
+    </div>
+    <!-- For small -->
+    <div class="w3-content w3-hide-medium w3-hide-large">
+      <div class="w3-row-padding">
+        <div class="w3-row-padding">
+          <div class="w3-card w3-margin-top">
+            <header class="w3-bar w3-deep-purple">
+              <i class="w3-bar-item w3-xxlarge fa fa-heart"></i>
+              <span class="w3-bar-item w3-xlarge">Ya Heart Rate</span>
+            </header>
+            <div class="w3-container">
+              <p>
+                When you hit the treadmill or stairmaster, you just stay there waiting for the workout to pass, with nothing to concentrate on except the passing of time. When you shuffle tho, time ceases to exist and you get in some great cardio without even noticing.
+              </p>
+            </div>
+          </div>
+          <div class="w3-card w3-margin-top">
+            <header class="w3-bar w3-deep-purple">
+              <i class="w3-bar-item w3-xxlarge fa fa-trophy"></i>
+              <span class="w3-bar-item w3-xlarge">Feelin Content</span>
+            </header>
+            <div class="w3-container">
+              <p>
+                With each roadblocks you break thru and milestone you hit, you will feel a sense of accomplishment and personal satisfaction with your ability looking back. Overcoming one barrier will make you more confident in overcoming others, in shuffling or any other domain.
+              </p>
+            </div>
+          </div>
+          <div class="w3-card w3-margin-top">
+            <header class="w3-bar w3-deep-purple">
+              <i class="w3-bar-item w3-xxlarge fa fa-smile-o"></i>
+              <span class="w3-bar-item w3-xlarge">Boost Ya Mood</span>
+            </header>
+            <div class="w3-container">
+              <p>
+                Exercise, dancing, and music together release chemicals in your brain that literally make you feel happy. Not just your mood, but others' who watch you as well: because of humans affinity for rhythm and order, watching dancing is delightful.
+              </p>
+            </div>
+          </div>
+          <div class="w3-card w3-margin-top">
+            <header class="w3-bar w3-deep-purple">
+              <i class="w3-bar-item w3-xxlarge fa fa-bomb"></i>
+                <span class="w3-bar-item w3-xlarge">Looks Dopee</span>
+            </header>
+            <div class="w3-container">
+              <p>
+                Kill your next festival, shoot a creative choreography, blow away your next wedding - shuffling is dope. Dancing and music permeate the fabric of our society and characterize us as human - they form a currency of our culture, and are an integral form of art that we use to communicate the contents of our psyche.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 3: RUDIMENTS -->
+<div class="w3-container w3-padding-64 w3-row-padding">
+  <!-- For large/medium -->
+  <div class="w3-content" style="width: 100%">
+    <h1>THE RUDIMENTS</h1>
+    <p>
+      The vital tidbits of information you need to know to get on your feet shuffling asap.
+    </p>
+    <!-- Beats in a Bar -->
+    <blockquote class="w3-container w3-leftbar w3-border-green w3-leftbar">
+      <span class="w3-xlarge">
+        "4 <strong>BEATS</strong> in a <strong>BAR</strong>"
+      </span>
+      <p>Music is a timeline divided into <strong>"bars,"</strong> which're divided evenly into 4 <strong>"beats"</strong> (house-y EDM); this is called "4 on the Floor"</p>
+    </blockquote>
+    <blockquote class="w3-container w3-leftbar w3-border-yellow w3-leftbar">
+      <div class="w3-bar w3-large">
+        <img src="../img/Kick.png" style="width: 70px" class="w3-border w3-border-red" />
+        <img src="../img/Hihat.png" style="width: 70px" class="w3-border w3-border-yellow" />
+        <img src="../img/Clap.png" style="width: 70px" class="w3-border w3-border-blue" />
+        <img src="../img/Hihat.png" style="width: 70px" class="w3-border w3-border-yellow" />
+      </div>
+      <p><span class="w3-tag w3-red">kick("thud")</span> <span class="w3-tag w3-amber w3-text-white">hihat("tssk")</span> <span class="w3-tag w3-blue">clap/snare("crackle")</span> <span class="w3-tag w3-amber w3-text-white">hihat("tssk")</span>... listen for this drum pattern to count out four on the floor.  Kicks & Claps fall on beats, Hihats fall in b/w beats.</p>
+    </blockquote>
+    <blockquote class="w3-container w3-leftbar w3-border-blue w3-leftbar">
+      <span class="w3-tag w3-xlarge w3-red">1 </span>
+      <span class="w3-tag w3-xlarge w3-amber w3-text-white">& </span>
+      <span class="w3-tag w3-xlarge w3-blue">2 </span>
+      <span class="w3-tag w3-xlarge w3-amber w3-text-white">& </span>
+      <span class="w3-tag w3-xlarge w3-red">3 </span>
+      <span class="w3-tag w3-xlarge w3-amber w3-text-white">& </span>
+      <span class="w3-tag w3-xlarge w3-blue">4 </span>
+      <span class="w3-tag w3-xlarge w3-amber w3-text-white">& </span>
+      <p>Count these out as above, with numbers denoting beats and ampersands denoting half-beats(the hihats) </p>
+    </blockquote>
+    <div class="w3-panel">
+      <div class="w3-card w3-pale-red w3-border-red w3-leftbar w3-rightbar">
+        <div class="w3-container">
+          <p>
+            If you must skip the Rudiments section (which I beseech you not to, as it's a 10 min investment for a foundation to save you headache down the line), remember these 3 tidbits of information.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 4: ALMANAC -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-content" style="width: 100%">
+    <div class="w3-section">
+      <h1>THE ALMANAC</h1>
+      <p>
+        <span class="w3-tag w3-green">46</span> (and counting) moves documented in exhaustive detail for anyone anywhere to learn w/o any misinterpretation. For example:
+      </p>
+      <!-- ALMANAC EXAMPLE -->
+      <button onclick="openAccordion('StutterRearLoopDeLoop')" class="w3-hover-opacity w3-hover-red w3-left-align w3-button w3-bar w3-xlarge w3-block w3-left-alight">
+        Stutter, Rear -&gt LoopDeLoop
+      </button>
+      <div id="StutterRearLoopDeLoop" class="w3-container w3-margin-top w3-margin-bottom">
+        <div class="w3-row-padding">
+          <div class="w3-col w3-hover-grayscale w3-margin-bottom m12 l6">
+            <div class="w3-card">
+              <img src="https://media.giphy.com/media/xUOwGaHBi1hLzmlPHO/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoopMoveModal').style.display='block'"/>
+              <footer class="w3-container w3-green w3-center">
+                <h5>THE MOVE</h5>
+              </footer>
+            </div>
+          </div>
+          <div class="w3-col w3-hover-grayscale w3-center m12 l6">
+            <div class="w3-card">
+              <img src="https://media.giphy.com/media/xUOwG1L3uTMp07IfXG/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoopCountModal').style.display='block'"/>
+              <footer class="w3-container w3-green w3-center">
+                <h5>THE COUNT</h5>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <!-- Text Details -->
+        <div class="w3-row-padding">
+          <!-- 1st Half -->
+          <div class="w3-container w3-half">
+            <h5>LEARNING TIMES</h5>
+            <ul class="w3-ul" style="width: 100%">
+              <li>
+                Basic: <span class="w3-tag w3-red">150 iterations</span>
+              </li>
+              <li>
+                Familiar: <span class="w3-tag w3-red">300 iterations</span>
+              </li>
+              <li>
+                Fluent: <span class="w3-tag w3-red">550 iterations</span>
+              </li>
+            </ul>
+            <h5>PREREQUISITES</h5>
+            <ul class="w3-ul" style="width: 100%">
+              <li>
+                <a class="w3-tag w3-green" style="text-decoration: none;" href="#">Stutter, Rear</a>
+              </li>
+              <li>
+                <a class="w3-tag w3-green" style="text-decoration: none;" href="#">Stutter, Front</a>
+              </li>
+            </ul>
+            <h5>LEARN NEXT</h5>
+            <ul class="w3-ul" style="width: 100%">
+              <li>
+                <a class="w3-tag w3-red" style="text-decoration: none;" href="#">Spin, Inside Foot</a>
+              </li>
+            </ul>
+          </div>
+          <!-- 2nd Half -->
+          <div class="w3-container w3-half">
+            <h5>TIPS & MISTAKES + FIXES</h5>
+            <button onclick="openAccordion('StutterRearLoopDeLoopPit1')" class="w3-block w3-button w3-hover-deep-purple w3-hover-opacity w3-left-align ">Text</button>
+            <div id="StutterRearLoopDeLoopPit1" class="w3-border w3-border-deep-purple w3-container w3-hide">
+              <p>
+                Text
+              </p>
+            </div>
+            <button onclick="openAccordion('StutterRearLoopDeLoopPit2')" class="w3-block w3-button w3-hover-deep-purple w3-hover-opacity w3-left-align ">Stompy Feet / Bendy Knees</button>
+            <div id="StutterRearLoopDeLoopPit2" class="w3-border w3-border-deep-purple w3-container w3-hide">
+              <p>
+                Text
+              </p>
+            </div>
+            <button onclick="openAccordion('StutterRearLoopDeLoopWalkthrough')" class="w3-block w3-button w3-hover-green w3-hover-opacity w3-left-align ">WALKTHROUGH</button>
+            <div id="StutterRearLoopDeLoopWalkthrough" class="w3-border w3-border-green w3-container w3-hide">
+              <p>
+                Text
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Count 1 -->
+        <div class="w3-row-padding w3-panel">
+          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
+            <div class="w3-card">
+              <header class="w3-container w3-center w3-red">
+                <h6>Count 1</h6>
+              </header>
+              <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop1.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop1').style.display='block'"/>
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+          <!-- Count 1& -->
+          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
+            <div class="w3-card">
+              <header class="w3-container w3-center w3-amber w3-text-white">
+                <h6>Count &</h6>
+              </header>
+              <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop2.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop1a').style.display='block'"/>
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+          <!-- Count 2 -->
+          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
+            <div class="w3-card">
+              <header class="w3-container w3-center w3-blue">
+                <h6>Count 2</h6>
+              </header>
+              <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop3.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop2').style.display='block'"/>
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+          <!-- Count 2& -->
+          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
+            <div class="w3-card">
+              <header class="w3-container w3-center w3-amber w3-text-white">
+                <h6>Count &</h6>
+              </header>
+              <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop4.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop2a').style.display='block'"/>
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+          <!-- Count 3 -->
+          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
+            <div class="w3-card">
+              <header class="w3-container w3-center w3-red">
+                <h6>Count 3</h6>
+              </header>
+              <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop5.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop3').style.display='block'"/>
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+          <!-- Count 3& -->
+          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
+            <div class="w3-card">
+              <header class="w3-container w3-center w3-amber w3-text-white">
+                <h6>Count &</h6>
+              </header>
+              <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop6.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop3a').style.display='block'"/>
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+          <!-- Count 4 -->
+          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
+            <div class="w3-card">
+              <header class="w3-container w3-center w3-blue">
+                <h6>Count 4</h6>
+              </header>
+              <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop7.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop4').style.display='block'"/>
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+          <!-- Count 4& -->
+          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
+            <div class="w3-card">
+              <header class="w3-container w3-center w3-amber w3-text-white">
+                <h6>Count &</h6>
+              </header>
+              <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop8.png" style="width:100%; cursor:pointer" onclick="document.getElementById('StutterRearLoopDeLoop4a').style.display='block'"/>
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Youtube Vid -->
+        <div class="w3-container w3-center w3-padding">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/KESEm6zI7VM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div id="StutterRearLoopDeLoopMoveModal" class="w3-modal" onclick="this.style.display='none'">
+        <div class="w3-modal-content w3-animate-zoom">
+          <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+          <img src="https://media.giphy.com/media/xUOwGaHBi1hLzmlPHO/giphy.gif" style="width:100%">
+        </div>
+      </div>
+      <div id="StutterRearLoopDeLoopCountModal" class="w3-modal" onclick="this.style.display='none'">
+        <div class="w3-modal-content w3-animate-zoom">
+          <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+          <img src="https://media.giphy.com/media/xUOwG1L3uTMp07IfXG/giphy.gif" style="width:100%">
+        </div>
+      </div>
+      <div class="RearLoopDeLoop">
+        <div id="StutterRearLoopDeLoop1" class="w3-modal" onclick="this.style.display='none'">
+          <div class="w3-modal-content w3-animate-zoom">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop1.png" style="width:100%">
+          </div>
+        </div>
+        <div id="StutterRearLoopDeLoop1a" class="w3-modal" onclick="this.style.display='none'">
+          <div class="w3-modal-content w3-animate-zoom">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop2.png" style="width:100%">
+          </div>
+        </div>
+        <div id="StutterRearLoopDeLoop2" class="w3-modal" onclick="this.style.display='none'">
+          <div class="w3-modal-content w3-animate-zoom">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop3.png" style="width:100%">
+          </div>
+        </div>
+        <div id="StutterRearLoopDeLoop2a" class="w3-modal" onclick="this.style.display='none'">
+          <div class="w3-modal-content w3-animate-zoom">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop4.png" style="width:100%">
+          </div>
+        </div>
+        <div id="StutterRearLoopDeLoop3" class="w3-modal" onclick="this.style.display='none'">
+          <div class="w3-modal-content w3-animate-zoom">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop5.png" style="width:100%">
+          </div>
+        </div>
+        <div id="StutterRearLoopDeLoop3a" class="w3-modal" onclick="this.style.display='none'">
+          <div class="w3-modal-content w3-animate-zoom">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop6.png" style="width:100%">
+          </div>
+        </div>
+        <div id="StutterRearLoopDeLoop4" class="w3-modal" onclick="this.style.display='none'">
+          <div class="w3-modal-content w3-animate-zoom">
+            <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop7.png" style="width:100%">
+          </div>
+        </div>
+        <div id="StutterRearLoopDeLoop4a" class="w3-modal" onclick="this.style.display='none'">
+          <div class="w3-modal-content w3-animate-zoom">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <img src="../img/Count/StutterRearLoopDeLoop/StutterRearLoopDeLoop8.png" style="width:100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 5: TIPS -->
+<div class="w3-container w3-padding-64">
+  <div class="w3-content">
+    <h1 class="w3-margin-bottom">TIPS FOR LEARNING</h1>
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-col w3-margin-bottom m6 l6">
+        <div class="w3-card">
+          <header class="w3-bar w3-red">
+              <i class="w3-bar-item w3-xlarge fa fa-cut"></i>
+              <span class="w3-bar-item w3-large">Chunk It</span>
+          </header>
+          <div class="w3-container">
+            <p>
+              Practice counts in chunks & in reverse (e.g., 2&lt-&gt3, 1&lt-&gt3, 5-&gt8, etc.) This builds muscle memory more effectively, and helps w being able to freestyle later on
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col w3-margin-bottom m6 l6">
+        <div class="w3-card">
+          <header class="w3-bar w3-blue">
+              <i class="w3-bar-item w3-xlarge fa fa-eye"></i>
+              <span class="w3-bar-item w3-large">Anticipate</span>
+          </header>
+          <div class="w3-container">
+            <p>
+              Proactively read through the TIPS/FIXES so you can preemptively address potential mistakes and know how to identify them if you are committing one.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col w3-margin-bottom m6 l6">
+        <div class="w3-card">
+          <header class="w3-bar w3-amber w3-text-white">
+              <i class="w3-bar-item w3-xlarge fa fa-step-forward"></i>
+              <span class="w3-bar-item w3-large">Slow Is Smooth...</span>
+          </header>
+          <div class="w3-container">
+            <p>
+              Practicing the wrong technique by learning at a pace too far beyond your ability will screw you over. Practice each move initially at a slow pace, then gradually practice at higher speeds. Slow is smooth, smooth is fast.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col w3-margin-bottom m6 l6">
+        <div class="w3-card">
+          <header class="w3-bar w3-green">
+              <i class="w3-bar-item w3-xlarge fa fa-bug"></i>
+              <span class="w3-bar-item w3-large">Jack of All Trades...</span>
+          </header>
+          <div class="w3-container">
+            <p>
+              Focus on mastering a few moves at a time. It's better to have mastered a few moves than to have learned a bunch partially - moves learned halfway you might as well not know how to do at all.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 6: INSPIRE -->
+<div class="w3-container w3-padding-64 w3-light-grey w3-row-padding">
+  <div class="w3-content ">
+    <h1>PSA: YES, <span class="w3-text-red">YOU</span> CAN LEARN!!</h1>
+    <div class="w3-row-padding">
+      <!-- Left side -->
+      <div class="w3-half">
+        <h2>Shuffling Isn't Special</h2>
+        <p>
+          It may not seem dubious that you can learn - but that is why I’m here to tell you, YOU CAN LEARN. I had doubts every step of the way, but I persevered thru the frustration, feelings of incompetence, feelings of looking foolish and clumsy. I've made it to the end of the tunnel to tell you all that anyone can truly learn.
+        </p>
+        <p>
+          Believe that you CAN learn and you CAN improve - all as an extensive foundation laying. Once you grit through all the early on frustration, you will finally feel the momentum leaning forward, pulling your proficiency with it, and it'll feel oh so gratifying.
+        </p>
+        <h2>Grit &gt&gt&gt Talent</h2>
+        <p>
+          Talent is overrated! Gritting through what seems like a lack of ability and tirelessly learning the foundations, frameworks, and top-down of your craft are what appears to be "talent" to others. Yet aptitude is really in a majority grit. What people misattribute for a small number of people being born with inherent talent, is actually in fact the high threshold holding back those without enough grit to breakthrough and perfect a talent.
+        </p>
+        <p>
+          There are limits to our abilities - not everyone can be as smart as Elon Musk, as athletic as Usain Bolt, as charismatic as MLK. However, everyone CAN become exceptionally talented in whatever domain they choose (tech, basketball, chess, dancing, speaking russian, playing the violin). What builds these skills in people to noteworthy levels is not inherent talent - it is underlying grit to break through each threshold and reach increasing levels of aptitude.
+        </p>
+        <h2>Growth Mindset vs. Fixed Mindset</h2>
+        <p>
+          What sets apart the person who says "I can't do this, it's too hard, it's not for me, I don't need to learn this" and the one who says "I can learn how to do this, it's just going to take a lot of time and effort and potentially cause me a ton of frustration" is their mindset - they can have the same exact potential for talent, but only one will utilize theirs to the full potential.
+        </p>
+        <p>
+          Those with a growth mindset acknowledge that frustration and roadblocks are necessary to building worthwhile talents because nothing good comes easy - if something is easy, it's easy for everyone and probably not special.
+        </p>
+      </div>
+      <!-- Right Page -->
+      <div class="w3-half">
+        <div class="w3-row-padding w3-margin-bottom">
+          <div class="w3-col w3-margin-bottom m12 l6">
+            <div class="w3-card w3-center">
+              <header class="w3-amber w3-text-white w3-container">
+                <h4>Stumble Phase</h4>
+              </header>
+              <i class="w3-margin-top fa fa-meh-o w3-xxxlarge"></i>
+              <div class="w3-container">
+                <p>
+                  Everything feels unfamiliar. Concepts & ideas feel foreign and are hard to retain. Urge to quit, thinking you inherently can't shuffle or it's not worth it. The part of an S-Curve where it's flat at the start.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col l6">
+            <div class="w3-card w3-center">
+              <header class="w3-green w3-container">
+                <h4>Accelerate Phase</h4>
+              </header>
+              <i class="w3-margin-top fa fa-rocket w3-xxxlarge"></i>
+              <div class="w3-container">
+                <p>
+                  Slowly but surely you tidbits of information become second-nature, and with each new move you learn, your flow evolves. The part of the S-Curve where you growth becomes exponential.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Learner, Grower -->
+        <div class="w3-row-padding w3-margin-bottom">
+          <div class="w3-col m12 l6">
+            <div class="w3-card w3-center w3-margin-bottom">
+              <header class="w3-container w3-deep-orange">
+                <h4>Creator Phase</h4>
+              </header>
+              <i class="w3-margin-top fa fa-grav w3-xxxlarge"></i>
+              <div class="w3-container">
+                <p>
+                  Latter part of steep section on S Curve. You can learn new moves incredibly easily; you'll either get ideas for how to remix moves, or even accidentally make a mistep that is in count (because your flow is so concrete), and suddenly have discovered a new move.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m12 l6">
+            <div class="w3-center w3-card">
+              <header class="w3-deep-purple w3-container">
+                <h4>Mentor Phase</h4>
+              </header>
+              <i class="w3-margin-top fa fa-superpowers w3-xxxlarge"></i>
+              <div class="w3-container">
+                <p>
+                  You've completely fluent in shuffling, and can easily explain in detail each move you execute. You can move effortlessly, shuffling is second nature. You realize fully how fantastic of a phenomenon shuffling is and want others to be able to enjoy the art with you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-container">
+          <div class="w3-card w3-hover-opacity">
+            <a href="http://www.intropsych.com/ch07_cognition/learning_curve.html" target="_blank"><img src="../img/SCurve.jpg" style="width: 100%"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 7: ON THE WAY -->
+<div class="w3-container w3-padding-64">
+  <div class="w3-content">
+    <h1>FEATURES COMING ASAP</h1>
+    <div class="w3-row-padding">
+      <div class="w3-col w3-margin-bottom w3-center m6 l3">
+        <div class="w3-card">
+          <header class="w3-container w3-pink">
+            <h2>Influencer Accounts</h2>
+          </header>
+          <span class="w3-xxxlarge"><i class="fa fa-diamond"></i></span>
+          <div class="w3-container w3-left-align">
+            <p>
+              Upload your own tutorials and guides (subject to quality control verifications) and promote your own dance videos/styles
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col w3-margin-bottom w3-center m6 l3">
+        <div class="w3-card">
+          <header class="w3-container w3-teal">
+            <h2>Inspiration Vids</h2>
+          </header>
+          <span class="w3-xxxlarge"><i class="fa fa-instagram"></i></span>
+          <div class="w3-container w3-left-align">
+            <p>
+              View only the best, most creative triple-A shuffling productions for inspiration in moves, styles, producing, etc
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col w3-margin-bottom w3-center m6 l3">
+        <div class="w3-card">
+          <header class="w3-container w3-indigo">
+            <h2>Mastery Tracking</h2>
+          </header>
+          <span class="w3-xxxlarge"><i class="fa fa-graduation-cap"></i></span>
+          <div class="w3-container w3-left-align">
+            <p>
+              Keep track of which moves you're learning and monitor your progress over time
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col w3-margin-bottom w3-center m6 l3">
+        <div class="w3-card">
+          <header class="w3-container w3-amber w3-text-white">
+            <h2>New Almanacs!!</h2>
+          </header>
+          <span class="w3-xxxlarge"><i class="fa fa-book"></i></span>
+          <div class=" w3-left-align w3-container">
+            <ul class="w3-ul">
+              <li>Hip Hop</li>
+              <li>Salsa</li>
+              <li>Lightshows</li>
+              <!-- <li class="w3-bar">
+                <img src="../img/Kick.png" class="w3-bar-item w3-circle w3-hide-large" style="width: 60px" />
+                <span class="w3-bar-item">Hip Hop</span>
+              </li>
+              <li class="w3-bar">
+                <img src="../img/Hihat.png" class="w3-bar-item w3-circle w3-hide-large" style="width: 60px" />
+                <span class="w3-bar-item">Salsa</span>
+              </li>
+              <li class="w3-bar">
+                <img src="../img/Clap.png" class="w3-bar-item w3-circle w3-hide-large" style="width: 60px" />
+                <span class="w3-bar-item">Lightshows</span>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>

@@ -1,0 +1,11 @@
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -4px}
+.content {padding: 16px;}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.sticky {
+  padding-top: 60px;
+}
