@@ -10,35 +10,41 @@
   <% include ../partials/header %>
 </header>
 
-<div class="w3-padding-32 w3-center" id="about">
-  <div class="w3-padding-16">
-    <img src="../img/aboutphoto.jpg" class="w3-image w3-bottombar w3-border-green" width="300" height="300">
+<div class="w3-content">
+  <div class="w3-padding-32 w3-center" id="about">
+    <div class="w3-panel w3-yellow w3-display-container">
+      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-small w3-yellow w3-large w3-display-topright">&times;</span>
+      <p>Something suuuper dope coming here soon!!</p>
+    </div>
+    <div class="w3-padding-16">
+      <img src="../img/aboutphotoalt.jpg" class="w3-image w3-bottombar w3-border-green" width="300" height="300">
+    </div>
+    <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
+      <p>Lorem Ipsum Dolor my guy</p>
+      <p class="w3-large w3-text-pink">Let me know what I can improve!</p>
+      <div class="w3-section">
+        <label><b>Name</b></label>
+        <input class="w3-input w3-border" type="text" required name="Name">
+      </div>
+      <div class="w3-section">
+        <label><b>Email</b></label>
+        <input class="w3-input w3-border" type="text" required name="Email">
+      </div>
+      <div class="w3-section">
+        <label><b>Message</b></label>
+        <input class="w3-input w3-border" required name="Message">
+      </div>
+      <button type="submit" class="w3-button w3-block w3-green">Send</button>
+    </form>
   </div>
-  <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
-    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-    <p class="w3-large w3-text-pink">Do not hesitate to contact me!</p>
-    <div class="w3-section">
-      <label><b>Name</b></label>
-      <input class="w3-input w3-border" type="text" required name="Name">
-    </div>
-    <div class="w3-section">
-      <label><b>Email</b></label>
-      <input class="w3-input w3-border" type="text" required name="Email">
-    </div>
-    <div class="w3-section">
-      <label><b>Message</b></label>
-      <input class="w3-input w3-border" required name="Message">
-    </div>
-    <button type="submit" class="w3-button w3-block w3-green">Send</button>
-  </form>
 </div>
 
 <!-- ################################################### SECTION 6: INSPIRE -->
 <div class="w3-container w3-padding-32 w3-row-padding w3-light-grey">
   <div class="w3-content">
-    <h1 class="w3-center">ABSOLUTELY ANYONE CAN LEARN</h1>
+    <h1 class="w3-center">LET ME INSPIRE YOU!</h1>
     <hr />
-    <h2>Shuffling Is Just a Skill</h2>
+    <h2>Shuffling Is Just any Other Skill</h2>
     <p>
       Anyone can learn to shuffle! I had doubts every step of the way, but I persevered thru the frustration and feelings of incompetence and beg you to believe that you CAN learn and CAN improve. Once you grit through the early on frustration, you will feel the momentum pulling you and your proficiency forward, and it'll feel oh so gratifying.
     </p>
