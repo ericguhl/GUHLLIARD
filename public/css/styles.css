@@ -1,4 +1,11 @@
 body {font-family: "Raleway", Arial, sans-serif}
+h1 {font-family: "Raleway"; font-weight: bold}
+h2 {font-family: "Raleway"; font-weight: bold}
+h3 {font-family: "Raleway"; font-weight: bold}
+h4 {font-family: "Raleway"; font-weight: bold}
+h5 {font-family: "Raleway"; font-weight: bold}
+h6 {font-family: "Raleway"; font-weight: bold}
+
 .w3-row img {margin-bottom: -4px}
 .content {padding: 16px;}
 .sticky {
