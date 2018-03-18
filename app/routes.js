@@ -19,9 +19,17 @@ router.get('/rudiments', function(req, res) {
   res.render('pages/rudiments');
 });
 
-// route for almanac
-router.get('/almanac', function(req, res) {
-  res.render('pages/almanac');
+// route for almanacs
+router.get('/shufflealmanac', function(req, res) {
+  res.render('pages/shufflealmanac');
+});
+
+router.get('/shapesalmanac', function(req, res) {
+  res.render('pages/shapesalmanac');
+});
+
+router.get('/hiphopalmanac', function(req, res) {
+  res.render('pages/hiphopalmanac');
 });
 
 // route for advanced

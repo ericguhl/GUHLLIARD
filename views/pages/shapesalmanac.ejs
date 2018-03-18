@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shapes Almanac</title>
+  <% include ../partials/head %>
+</head>
+</html>
+
+<header>
+  <% include ../partials/header %>
+</header>
+
+<!-- ACCORDIONS -->
+<div class="w3-container w3-padding-32">
+  <div class="w3-content">
+    <div class="w3-container w3-center">
+      <h1>SHAPES ALMANAC</h1>
+      <hr />
+      <p>
+        Kill your next festival with some wicked shapes. If starting off, check out <span class="w3-tag w3-green">cuts</span>, <span class="w3-tag w3-green">toe divots</span>, <span class="w3-tag w3-green">leaners</span>, and <span class="w3-tag w3-green">shimmy</span> first.
+      </p>
+    </div>
+    <div class="w3-panel w3-yellow w3-display-container">
+      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-small w3-yellow w3-large w3-display-topright">&times;</span>
+      <p>Click a move to expand; colors represent difficulty (purple is elite)</p>
+    </div>
+    <div class="w3-panel w3-yellow w3-display-container">
+      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-small w3-yellow w3-large w3-display-topright">&times;</span>
+      <p>Don't sleep on the Rudiments section! It's a 7 min read that'll make everything much easier</p>
+    </div>
+    <div class="w3-panel w3-yellow w3-hide-large w3-hide-medium w3-display-container">
+      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-small w3-yellow w3-large w3-display-topright">&times;</span>
+      <p>Rotate phone to landscape for larger gifs!</p>
+    </div>
+    <!-- ************************************** ANKLE BREAKERS ************************************** -->
+    <h2>ANKLE BREAKERS</h2>
+    <% include ../partials/anklebreakers.ejs %>
+    <!-- ************************************** CRISS CROSS CRISS CROSS CRISS CROSS ************************************** -->
+    <h2>CRISS CROSS</h2>
+    <% include ../partials/crisscrosses.ejs %>
+    <!-- ************************************** CUTS ************************************** -->
+    <h2>CUTS</h2>
+    <% include ../partials/cuts.ejs %>
+    <!-- ************************************** LEANERS LEANERS LEANERS ************************************** -->
+    <h2>LEANERS</h2>
+    <% include ../partials/leaners.ejs %>
+    <!-- ************************************** LEG TWISTS ************************************** -->
+    <h2>LEG TWISTS</h2>
+    <% include ../partials/legtwists.ejs %>
+    <!-- ************************************** SHIMMY SHIMMY SHIMMY ************************************** -->
+    <h2>SHIMMY</h2>
+    <% include ../partials/shimmys.ejs %>
+    <!-- ************************************** SPINS SPINS SPINS ************************************** -->
+    <h2>SPINS</h2>
+    <% include ../partials/spinsStationary.ejs %>
+  </div>
+</div>
+
+<!-- MODALS -->
+<% include ../partials/modalsMoveShapes %>
+<% include ../partials/modalsCountShapes %>
+<% include ../partials/modalsPicShapes %>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>

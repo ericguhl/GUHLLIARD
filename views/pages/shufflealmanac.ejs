@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shuffle Almanac</title>
+  <% include ../partials/head %>
+</head>
+</html>
+
+<header>
+  <% include ../partials/header %>
+</header>
+
+<!-- ACCORDIONS -->
+<div class="w3-container w3-padding-32">
+  <div class="w3-content">
+    <div class="w3-container w3-center">
+      <h1>SHUFFLE ALMANAC</h1>
+      <hr />
+      <p>
+        Vibe out at your next festival; no better way to get from stage to stage than to shuffle there. If starting off, check out <span class="w3-tag w3-green">running man</span>, <span class="w3-tag w3-green">rear stutter</span>, <span class="w3-tag w3-green">moonshuffle</span>, and <span class="w3-tag w3-green">Outside Slide</span> first.
+      </p>
+    </div>
+    <div class="w3-panel w3-yellow w3-display-container">
+      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-small w3-yellow w3-large w3-display-topright">&times;</span>
+      <p>Click a move to expand; colors represent difficulty (purple is elite)</p>
+    </div>
+    <div class="w3-panel w3-yellow w3-display-container">
+      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-small w3-yellow w3-large w3-display-topright">&times;</span>
+      <p>Don't sleep on the Rudiments section! It's a 7 min read that'll make everything much easier</p>
+    </div>
+    <div class="w3-panel w3-yellow w3-hide-large w3-hide-medium w3-display-container">
+      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-small w3-yellow w3-large w3-display-topright">&times;</span>
+      <p>Rotate phone to landscape for larger gifs!</p>
+    </div>
+    <!-- ************************************** BACKPEDALS ************************************** -->
+    <h2>BACKPEDALS</h2>
+    <% include ../partials/backpedals.ejs %>
+    <!-- ************************************** DROPS DROPS DROPS ************************************** -->
+    <h2>DROPS</h2>
+    <% include ../partials/drops.ejs %>
+    <!-- ************************************** MOONWALK MOONWALK MOONWALK ************************************** -->
+    <h2>MOONWALK</h2>
+    <% include ../partials/moonwalks.ejs %>
+    <!-- ************************************** RUNNING MANS RUNNING MANS RUNNING MANS ************************************** -->
+    <h2>RUNNING MAN</h2>
+    <% include ../partials/runningmans.ejs %>
+    <!-- ************************************** SLIDES SLIDES SLIDES ************************************** -->
+    <h2>SLIDES</h2>
+    <% include ../partials/slides.ejs %>
+    <!-- ************************************** SPINS 360 SPINS ************************************** -->
+    <h2>SPINS</h2>
+    <% include ../partials/spinsMoving.ejs %>
+    <!-- ************************************** STUTTERS ************************************** -->
+    <h2>STUTTERS</h2>
+    <% include ../partials/stutters.ejs %>
+  </div>
+</div>
+
+<!-- MODALS -->
+<% include ../partials/modalsMoveShuffle %>
+<% include ../partials/modalsCountShuffle %>
+<% include ../partials/modalsPicShuffle %>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
