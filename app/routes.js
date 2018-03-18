@@ -32,6 +32,10 @@ router.get('/hiphopalmanac', function(req, res) {
   res.render('pages/hiphopalmanac');
 });
 
+router.get('/glovingalmanac', function(req, res) {
+  res.render('pages/glovingalmanac');
+});
+
 // route for advanced
 router.get('/advanced', function(req, res) {
   res.render('pages/advanced');
