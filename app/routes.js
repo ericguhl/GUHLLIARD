@@ -14,6 +14,11 @@ router.get('/', function(req, res) {
   // res.sendFile(path.join(__dirname, '../public/views/index.html'));
 });
 
+// route for collage
+router.get('/collage', function(req, res) {
+  res.render('pages/collage');
+});
+
 // route for rudiments
 router.get('/rudiments', function(req, res) {
   res.render('pages/rudiments');
@@ -46,7 +51,7 @@ router.get('/about', function(req, res) {
   res.render('pages/about');
 });
 
-// route for advanced
+// route for inspiration
 router.get('/inspiration', function(req, res) {
   res.render('pages/inspiration');
 });
