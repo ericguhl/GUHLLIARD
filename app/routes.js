@@ -19,9 +19,9 @@ router.get('/collage', function(req, res) {
   res.render('pages/collage');
 });
 
-// route for rudiments
-router.get('/rudiments', function(req, res) {
-  res.render('pages/rudiments');
+// route for collage
+router.get('/rewind', function(req, res) {
+  res.render('pages/rewind');
 });
 
 // route for almanacs
