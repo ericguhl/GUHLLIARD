@@ -15,11 +15,16 @@ router.get('/', function(req, res) {
 });
 
 // route for collage
+router.get('/tips', function(req, res) {
+  res.render('pages/tips');
+});
+
+// route for collage
 router.get('/collage', function(req, res) {
   res.render('pages/collage');
 });
 
-// route for collage
+// route for rewind
 router.get('/rewind', function(req, res) {
   res.render('pages/rewind');
 });
@@ -51,7 +56,7 @@ router.get('/about', function(req, res) {
   res.render('pages/about');
 });
 
-// route for inspiration
-router.get('/inspiration', function(req, res) {
-  res.render('pages/inspiration');
+// route for exposition
+router.get('/exposition', function(req, res) {
+  res.render('pages/exposition');
 });
