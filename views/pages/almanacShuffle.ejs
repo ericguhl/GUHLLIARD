@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Shapes Almanac</title>
+  <title>Shuffle Almanac</title>
   <% include ../partials/head %>
 </head>
 </html>
@@ -14,11 +14,10 @@
 <div class="w3-container w3-padding-32">
   <div class="w3-content">
     <div class="w3-container w3-center">
-      <h1>SHAPES ALMANAC</h1>
+      <h1>SHUFFLE ALMANAC</h1>
       <hr />
       <p>
-        Kill your next festival with some wicked shapes.
-      </p>
+        Vibe out at your next festival; no better way to get from stage to stage than to shuffle there.
     </div>
     <div class="w3-panel w3-yellow w3-display-container">
       <span onclick="this.parentElement.style.display='none'" class="w3-button w3-small w3-yellow w3-large w3-display-topright">&times;</span>
@@ -28,27 +27,24 @@
       <span onclick="this.parentElement.style.display='none'" class="w3-button w3-small w3-yellow w3-large w3-display-topright">&times;</span>
       <p>Rotate phone to landscape for larger gifs!</p>
     </div>
-    <!-- ************************************** ANKLE BREAKERS ************************************** -->
-    <h2>ANKLE BREAKERS</h2>
-    <% include ../partials/anklebreakers.ejs %>
-    <!-- ************************************** CRISS CROSS ************************************** -->
-    <h2>CRISS CROSS</h2>
-    <% include ../partials/crisscrosses.ejs %>
-    <!-- ************************************** CUTS ************************************** -->
-    <h2>CUTS</h2>
-    <% include ../partials/cuts.ejs %>
-    <!-- ************************************** LEANERS ************************************** -->
-    <h2>FLY FEET</h2>
-    <% include ../partials/flyfeet.ejs %>
-    <!-- ************************************** SHIMMY ************************************** -->
-    <h2>SHIMMY</h2>
-    <% include ../partials/shimmys.ejs %>
-    <!-- ************************************** SPINS ************************************** -->
+    <!-- ************************************** DROPS ************************************** -->
+    <h2>DROPS</h2>
+    <% include ../partials/shuffleDrops.ejs %>
+    <!-- ************************************** MOONWALK ************************************** -->
+    <h2>MOONWALK</h2>
+    <% include ../partials/shuffleMoonwalks.ejs %>
+    <!-- ************************************** RUNNING MANS ************************************** -->
+    <h2>RUNNING MAN</h2>
+    <% include ../partials/shuffleRunningMans.ejs %>
+    <!-- ************************************** SLIDES ************************************** -->
+    <h2>SLIDES</h2>
+    <% include ../partials/shuffleSlides.ejs %>
+    <!-- ************************************** SPINS 360 ************************************** -->
     <h2>SPINS</h2>
-    <% include ../partials/spinsStationary.ejs %>
-    <!-- ************************************** STEPPIN ************************************** -->
-    <h2>STEPPIN</h2>
-    <% include ../partials/steppin.ejs %>
+    <% include ../partials/shuffleSpins.ejs %>
+    <!-- ************************************** STUTTERS ************************************** -->
+    <h2>STUTTERS</h2>
+    <% include ../partials/shuffleStutters.ejs %>
   </div>
 </div>
 
@@ -74,9 +70,9 @@
 </div>
 
 <!-- MODALS -->
-<% include ../partials/modalsMoveShapes %>
-<% include ../partials/modalsCountShapes %>
-<% include ../partials/modalsPicShapes %>
+<% include ../partials/modalsMoveShuffle %>
+<% include ../partials/modalsCountShuffle %>
+<% include ../partials/modalsPicShuffle %>
 
 <footer>
     <% include ../partials/footer %>

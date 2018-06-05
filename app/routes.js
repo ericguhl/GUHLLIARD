@@ -31,19 +31,19 @@ router.get('/rewind', function(req, res) {
 
 // route for almanacs
 router.get('/shufflealmanac', function(req, res) {
-  res.render('pages/shufflealmanac');
+  res.render('pages/almanacShuffle');
 });
 
 router.get('/shapesalmanac', function(req, res) {
-  res.render('pages/shapesalmanac');
+  res.render('pages/almanacShapes');
 });
 
 router.get('/hiphopalmanac', function(req, res) {
-  res.render('pages/hiphopalmanac');
+  res.render('pages/almanacHipHop');
 });
 
 router.get('/glovingalmanac', function(req, res) {
-  res.render('pages/glovingalmanac');
+  res.render('pages/almanacGloving');
 });
 
 // route for advanced
