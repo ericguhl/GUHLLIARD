@@ -1,14 +1,3 @@
-// Sticky NAV
-window.onscroll = function() {stickyNav()};
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-function stickyNav() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("w3-top");
-  } else {
-    navbar.classList.remove("w3-top");
-  }
-}
 // NavBarSmall
 function myFunction() {
   var x = document.getElementById("navbarSmall");
