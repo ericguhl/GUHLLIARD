@@ -1,4 +1,4 @@
-var slideIndex = [1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1];
+var slideIndex = [1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1, 1];
 var slideId = ["chellaSlides",
   "smoothcriminalSlides",
   "splashhouseSlides",
@@ -19,26 +19,28 @@ var slideId = ["chellaSlides",
 
   "zigzagSlides",
   "cutsSlides",
+  "cutsrevSlides",
   "frontstutterSlides",
   "rearkickSlides",
-  "vsteppinSlides",
 
+  "vsteppinSlides",
   "yankedSlides",
   "flyfeetSlides",
   "flyfeetrevSlides",
   "giddyupSlides",
-  "karaokeSlides",
 
+  "karaokeSlides",
   "whackySlides",
   "innoutSlides",
   "roundaboutsSlides",
   "shimmySlides",
-  "siderockSlides",
 
+  "siderockSlides",
   "stomperSlides",
   "tsteppinSlides",
   "toepogoSlides",
   "insidespinSlides",
+
   "outsidespinSlides"
   ]
 // showDivs(1, 0);

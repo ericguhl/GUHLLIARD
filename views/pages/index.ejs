@@ -3,6 +3,7 @@
 <head>
   <title>GUHLLIARD</title>
   <% include ../partials/head %>
+  <script src="../js/hiphopSlideshows.js"></script>
 </head>
 </html>
 
@@ -36,419 +37,185 @@
       <div class="w3-container">
         <h2>ALMANACS</h2>
       </div>
-      <button onclick="openAccordion('RM')" class="w3-hover-opacity w3-hover-green w3-left-align w3-button w3-bar w3-xlarge w3-block">
+      <!-- ++++++++++++++++ Running Man ++++++++++++++++ -->
+      <button onclick="openAccordion('RunningMan')" class="w3-hover-opacity w3-hover-green w3-left-align w3-button w3-bar w3-xlarge w3-block">
         Running Man
       </button>
-      <div id="RM" class="w3-hide w3-container w3-margin-top w3-margin-bottom">
+      <div id="RunningMan" class="w3-hide w3-container">
+        <!-- GIFS -->
         <div class="w3-row-padding">
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom m12 l6">
+          <div class="w3-half w3-hover-grayscale w3-margin-top">
             <div class="w3-card">
-              <img src="https://media.giphy.com/media/1dI01pPzF5ystuJCHl/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('RMMoveModal').style.display='block'"/>
+              <img src="https://media.giphy.com/media/1dI01pPzF5ystuJCHl/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('RunningManMoveModal').style.display='block'"/>
               <footer class="w3-container w3-green w3-center">
                 <h5>THE MOVE</h5>
               </footer>
             </div>
           </div>
-          <div class="w3-col w3-hover-grayscale w3-center m12 l6">
+          <div class="w3-half w3-hover-grayscale w3-margin-top">
             <div class="w3-card">
-              <img src="https://media.giphy.com/media/nqCdLv4JTLfVPzjv9f/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('RMCountModal').style.display='block'"/>
+              <img src="https://media.giphy.com/media/nqCdLv4JTLfVPzjv9f/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('RunningManCountModal').style.display='block'"/>
               <footer class="w3-container w3-green w3-center">
                 <h5>THE COUNT</h5>
               </footer>
             </div>
           </div>
         </div>
-        <!-- Text Details -->
-        <div class="w3-row-padding">
-          <!-- 2nd Half -->
-          <div class="w3-container w3-half">
-            <h5>TIPS</h5>
-            <button onclick="openAccordion('Demo1')" class="w3-block w3-button w3-hover-deep-purple w3-hover-opacity w3-left-align ">Floating Feet</button>
-            <div id="Demo1" class="w3-border w3-border-deep-purple w3-container w3-hide">
-              <p>
-                If as you try to learn the move it seems as if your front foot doesn't land at the same time as your rear foot at the half beats, exaggerate the length of your gait (and gravity will pull down both of your feet so that you can start to build the proper muscle memory.
-              </p>
-            </div>
-            <button onclick="openAccordion('Demo2')" class="w3-block w3-button w3-hover-deep-purple w3-hover-opacity w3-left-align ">Stompy Feet / Bendy Knees</button>
-            <div id="Demo2" class="w3-border w3-border-deep-purple w3-container w3-hide">
-              <p>
-                The key to a slick looking running man is to have minimal bend in your knees and length of your stride. A running man will look off if you raise your knees too high (as if you were trying to stomp the ground) or take extra long gaits. Modesty is key here as your create the very subtle mirage that you are running in place - in fact, it's more of a slide than a run (as the term "shuffling" suggests it might be). To minimize the stride, find the right bounce in your step so that your feet can travel the minimal distance to create the apparition of a running man with the least amount of airtime (off the ground). This will also stop you from lifting your legs too high and creating the stomping motion.
-              </p>
-            </div>
-            <button onclick="openAccordion('Demo3')" class="w3-block w3-button w3-hover-deep-purple w3-hover-opacity w3-left-align ">Mirrored Stances</button>
-            <div id="Demo3" class="w3-border w3-border-deep-purple w3-container w3-hide">
-              <p>
-                Your feet will alternate between four different distinct positions - consisting of two pairs of mirroring stances. In the first set of twin stances, your front foot is flat on the ground while your rear foot is on its toes. In the second set, the front foot that was flat is straight below your body while your rear foot is tucked next to the middle of your shin, off the ground.
-              </p>
+        <!-- COUNTS -->
+        <div class="w3-container w3-margin-top">
+          <div class="w3-card">
+            <div class="w3-content w3-display-container">
+              <div class="w3-display-container runningmanSlides">
+                <img src="../img/Count/SHUFFLE/RUNNINGMANS/RunningMan/RunningMan1.jpg" style="width: 100%">
+                <div class="w3-display-bottommiddle w3-center w3-xlarge w3-container w3-padding w3-opacity w3-red" style="width: 100%">
+                  Count 1
+                </div>
+              </div>
+              <div class="w3-display-container runningmanSlides" style="display: none;">
+                <img src="../img/Count/SHUFFLE/RUNNINGMANS/RunningMan/RunningMan1n.jpg" style="width: 100%">
+                <div class="w3-display-bottommiddle w3-center w3-xlarge w3-container w3-padding w3-opacity w3-amber w3-text-white" style="width: 100%">
+                  &
+                </div>
+              </div>
+              <div class="w3-display-container runningmanSlides" style="display: none;">
+                <img src="../img/Count/SHUFFLE/RUNNINGMANS/RunningMan/RunningMan2.jpg" style="width: 100%">
+                <div class="w3-display-bottommiddle w3-center w3-xlarge w3-container w3-padding w3-opacity w3-blue" style="width: 100%">
+                  Count 2
+                </div>
+              </div>
+              <div class="w3-display-container runningmanSlides" style="display: none;">
+                <img src="../img/Count/SHUFFLE/RUNNINGMANS/RunningMan/RunningMan2n.jpg" style="width: 100%">
+                <div class="w3-display-bottommiddle w3-center w3-xlarge w3-container w3-padding w3-opacity w3-amber w3-text-white" style="width: 100%">
+                  &
+                </div>
+              </div>
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 6)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 6)">&#10095;</button>
             </div>
           </div>
-          <!-- 1st Half -->
-          <div class="w3-container w3-half">
-            <h5>PREREQUISITES</h5>
-            <ul>
+        </div>
+        <!-- TEXT -->
+        <div class="w3-container w3-padding">
+          <button onclick="openAccordion('runningmanWalkthrough')" class="w3-hover-opacity w3-hover-green w3-large w3-button w3-bar w3-left-align w3-block">WALKTHROUGH</button>
+          <div id="runningmanWalkthrough" class="w3-border w3-container w3-hide">
+            <ul class="w3-ul">
               <li>
-                N/A
+                Start with left foot forwards and flat, right foot behind you and on toes
+              </li>
+              <li>
+                Slide/jostle left foot backwards and flat to center of stance, while bringing right foot up tucked next to your shin
+              </li>
+              <li>
+                Land right foot flat in front of stance while pushing left foot backwards on toes at rear or stance
+              </li>
+              <li>
+                Repeat, but now bring up left foot and land right foot flat, and so on
               </li>
             </ul>
           </div>
-        </div>
-        <!-- Count 1 -->
-        <div class="w3-row-padding w3-panel">
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-red">
-                <h6>Count 1</h6>
-              </header>
-              <img src="../img/Count/RunningMan/RunningMan1.png" style="width:100%; cursor:pointer" onclick="document.getElementById('RM1').style.display='block'"/>
-            </div>
+          <button onclick="openAccordion('Demo1')" class="w3-hover-opacity w3-hover-green w3-large w3-button w3-bar w3-left-align w3-block">Floating Feet</button>
+          <div id="Demo1" class="w3-border w3-container w3-hide">
+            <p>
+              If as you try to learn the move it seems as if your front foot doesn't land at the same time as your rear foot at the half beats, exaggerate the length of your gait (and gravity will pull down both of your feet so that you can start to build the proper muscle memory.
+            </p>
           </div>
-          <!-- Count 1& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/RunningMan/RunningMan2.png" style="width:100%; cursor:pointer" onclick="document.getElementById('RM1a').style.display='block'"/>
-            </div>
+          <button onclick="openAccordion('Demo2')" class="w3-hover-opacity w3-hover-green w3-button w3-large w3-bar w3-left-align w3-block">Stompy Feet / Bendy Knees</button>
+          <div id="Demo2" class="w3-border w3-container w3-hide">
+            <p>
+              The key to a slick looking running man is to have minimal bend in your knees and length of your stride. A running man will look off if you raise your knees too high (as if you were trying to stomp the ground) or take extra long gaits. Modesty is key here as your create the very subtle mirage that you are running in place - in fact, it's more of a slide than a run (as the term "shuffling" suggests it might be). To minimize the stride, find the right bounce in your step so that your feet can travel the minimal distance to create the apparition of a running man with the least amount of airtime (off the ground). This will also stop you from lifting your legs too high and creating the stomping motion.
+            </p>
           </div>
-          <!-- Count 2 -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-blue">
-                <h6>Count 2</h6>
-              </header>
-              <img src="../img/Count/RunningMan/RunningMan3.png" style="width:100%; cursor:pointer" onclick="document.getElementById('RM2').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 2& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/RunningMan/RunningMan4.png" style="width:100%; cursor:pointer" onclick="document.getElementById('RM2a').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 3 -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-red">
-                <h6>Count 3</h6>
-              </header>
-              <img src="../img/Count/RunningMan/RunningMan5.png" style="width:100%; cursor:pointer" onclick="document.getElementById('RM3').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 3& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/RunningMan/RunningMan6.png" style="width:100%; cursor:pointer" onclick="document.getElementById('RM3a').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 4 -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-blue">
-                <h6>Count 4</h6>
-              </header>
-              <img src="../img/Count/RunningMan/RunningMan7.png" style="width:100%; cursor:pointer" onclick="document.getElementById('RM4').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 4& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/RunningMan/RunningMan8.png" style="width:100%; cursor:pointer" onclick="document.getElementById('RM4a').style.display='block'"/>
-            </div>
-          </div>
-        </div>
-        <!-- Walkthrough -->
-        <div class="w3-container w3-margin-top">
-          <div class="w3-card">
-          <header class="w3-container w3-center w3-green">
-            <h5>WALKTHROUGH</h5>
-          </header>
-            <div>
-              <ul class="w3-ul">
-                <li>
-                  <span class="w3-tag w3-small w3-green">1</span> Start with left foot forwards and flat, right foot behind you and on toes
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">2</span> Slide/jostle left foot backwards and flat to center of stance, while bringing right foot up tucked next to your shin
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">3</span> Land right foot flat in front of stance while pushing left foot backwards on toes at rear or stance
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">4</span> Repeat, but now bring up left foot and land right foot flat, and so on
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ++++++++++++++++ Launch Back ++++++++++++++++ -->
-      <button onclick="openAccordion('LaunchBack')" class="w3-hover-opacity w3-hover-amber w3-hover-text-white w3-left-align w3-button w3-bar w3-xlarge w3-block">
-        Launch Back
-      </button>
-      <div id="LaunchBack" class="w3-hide w3-container w3-margin-top w3-margin-bottom">
-        <div class="w3-row-padding">
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom m12 l6">
-            <div class="w3-card">
-              <img src="https://media.giphy.com/media/MRXmySP4fEpSowInOy/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('LaunchBackMoveModal').style.display='block'"/>
-              <footer class="w3-container w3-green w3-center">
-                <h5>THE MOVE</h5>
-              </footer>
-            </div>
-          </div>
-          <div class="w3-col w3-hover-grayscale w3-center m12 l6">
-            <div class="w3-card">
-              <img src="https://media.giphy.com/media/jVFqgvGY4ENEyAfxEU/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('LaunchBackCountModal').style.display='block'"/>
-              <footer class="w3-container w3-green w3-center">
-                <h5>THE COUNT</h5>
-              </footer>
-            </div>
-          </div>
-        </div>
-        <!-- Text Details -->
-        <div class="w3-row-padding">
-          <!-- 2nd Half -->
-          <div class="w3-container w3-half">
-            <h5><i class="fa fa-life-ring"></i> TIPS</h5>
-            <button onclick="openAccordion('LaunchBackPit1')" class="w3-block w3-button w3-hover-deep-purple w3-hover-opacity w3-left-align ">Lorem</button>
-            <div id="LaunchBackPit1" class="w3-border w3-border-deep-purple w3-container w3-hide">
-              <p>
-                Lorem
-              </p>
-            </div>
-            <button onclick="openAccordion('LaunchBackPit2')" class="w3-block w3-button w3-hover-deep-purple w3-hover-opacity w3-left-align ">Lorem</button>
-            <div id="LaunchBackPit2" class="w3-border w3-border-deep-purple w3-container w3-hide">
-              <p>
-                Lorem
-              </p>
-            </div>
-          </div>
-          <!-- 1st Half -->
-          <div class="w3-container w3-half">
-            <h5><i class="fa fa-cubes"></i> PREREQUISITES</h5>
-            <ul>
-              <li>
-                Lorem
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- Count 1 -->
-        <div class="w3-row-padding w3-panel">
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-red">
-                <h6>Count 1</h6>
-              </header>
-              <img src="../img/Count/LaunchBack/LaunchBack1.png" style="width:100%; cursor:pointer" onclick="document.getElementById('LaunchBack1').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 1& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/LaunchBack/LaunchBack2.png" style="width:100%; cursor:pointer" onclick="document.getElementById('LaunchBack1a').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 2 -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-blue">
-                <h6>Count 2</h6>
-              </header>
-              <img src="../img/Count/LaunchBack/LaunchBack3.png" style="width:100%; cursor:pointer" onclick="document.getElementById('LaunchBack2').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 2& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/LaunchBack/LaunchBack4.png" style="width:100%; cursor:pointer" onclick="document.getElementById('LaunchBack2a').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 3 -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-red">
-                <h6>Count 3</h6>
-              </header>
-              <img src="../img/Count/LaunchBack/LaunchBack5.png" style="width:100%; cursor:pointer" onclick="document.getElementById('LaunchBack3').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 3& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/LaunchBack/LaunchBack6.png" style="width:100%; cursor:pointer" onclick="document.getElementById('LaunchBack3a').style.display='block'"/>
-            </div>
-          </div>
-        </div>
-        <!-- Walkthrough -->
-        <div class="w3-container w3-margin-top">
-          <div class="w3-card">
-          <header class="w3-container w3-center w3-green">
-            <h5>WALKTHROUGH</h5>
-          </header>
-            <div>
-              <ul class="w3-ul">
-                <li>
-                  <span class="w3-tag w3-small w3-green">1</span>
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">2</span>
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">3</span>
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">4</span>
-                </li>
-              </ul>
-            </div>
+          <button onclick="openAccordion('Demo3')" class="w3-hover-opacity w3-hover-green w3-button w3-large w3-bar w3-left-align w3-block">Mirrored Stances</button>
+          <div id="Demo3" class="w3-border w3-container w3-hide">
+            <p>
+              Your feet will alternate between four different distinct positions - consisting of two pairs of mirroring stances. In the first set of twin stances, your front foot is flat on the ground while your rear foot is on its toes. In the second set, the front foot that was flat is straight below your body while your rear foot is tucked next to the middle of your shin, off the ground.
+            </p>
           </div>
         </div>
       </div>
       <!-- ++++++++++++++++ Hit Them Folks ++++++++++++++++ -->
-      <button onclick="openAccordion('HHHitThemFolks')" class="w3-hover-opacity w3-hover-amber w3-hover-text-white w3-left-align w3-button w3-bar w3-xlarge w3-block">
+      <button onclick="openAccordion('HitThemFolks')" class="w3-hover-opacity w3-hover-amber w3-hover-text-white w3-left-align w3-button w3-bar w3-xlarge w3-block">
         Hit Them Folks
       </button>
-      <div id="HHHitThemFolks" class="w3-hide w3-container w3-margin-top w3-margin-bottom">
+      <div id="HitThemFolks" class="w3-hide w3-container">
         <div class="w3-row-padding">
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom m12 l6">
+          <div class="w3-half w3-hover-grayscale w3-margin-top">
             <div class="w3-card">
-              <img src="https://media.giphy.com/media/yuGJiU48gnKiPytVZ5/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('HHHitThemFolksMoveModal').style.display='block'"/>
-              <footer class="w3-container w3-green w3-center">
-                <h5>THE MOVE</h5>
-              </footer>
+              <img src="https://media.giphy.com/media/yuGJiU48gnKiPytVZ5/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('HitThemFolksMoveModal').style.display='block'"/>
             </div>
           </div>
-          <div class="w3-col w3-hover-grayscale w3-center m12 l6">
+          <div class="w3-half w3-hover-grayscale w3-margin-top">
             <div class="w3-card">
-              <img src="https://media.giphy.com/media/1ncTGSMZU73XCJdN83/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('HHHitThemFolksCountModal').style.display='block'"/>
-              <footer class="w3-container w3-green w3-center">
-                <h5>THE COUNT</h5>
-              </footer>
+              <img src="https://media.giphy.com/media/1ncTGSMZU73XCJdN83/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('HitThemFolksCountModal').style.display='block'"/>
             </div>
           </div>
         </div>
-        <!-- Text Details -->
-        <div class="w3-row-padding">
-          <!-- 2nd Half -->
-          <div class="w3-container w3-half">
-            <h5><i class="fa fa-life-ring"></i> TIPS</h5>
-            <button onclick="openAccordion('HHHitThemFolksPit1')" class="w3-block w3-button w3-hover-deep-purple w3-hover-opacity w3-left-align ">Hand Reverse Hack</button>
-            <div id="HHHitThemFolksPit1" class="w3-border w3-border-deep-purple w3-container w3-hide">
-              <p>
-                To get down the motion of the hand reverse/crossover, we can take page out of the stretches swimmers perform before a relay. Without moving your feet or torso, swing your arms as far back behind your body (as if to stretch your chest) then swing them in and across your body, one over the other. Then switch. Knowing that motion, you simply alter it to look like HTF by bringing the upper arm (which changes each time alternation) more downward and criss-cross over the lower arm.
-              </p>
-            </div>
-            <button onclick="openAccordion('HHHitThemFolksPit2')" class="w3-block w3-button w3-hover-deep-purple w3-hover-opacity w3-left-align ">Alternate Crossovers</button>
-            <div id="HHHitThemFolksPit2" class="w3-border w3-border-deep-purple w3-container w3-hide">
-              <p>
-                The form of the crossover is very up to interpretation. Instead of bringing your arms fully across your body, you can also simply cross over your arms with them extended in front of you. Perfecting that motion is perhaps the easiest way to begin perfecting the cross-over, and you can slowly evolve it to more intricate forms.
-              </p>
-            </div>
-          </div>
-          <!-- 1st Half -->
-          <div class="w3-container w3-half">
-          </div>
-        </div>
-        <!-- Count 1 -->
-        <div class="w3-row-padding w3-panel">
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-red">
-                <h6>Count 1</h6>
-              </header>
-              <img src="../img/Count/HHHitThemFolks/HHHitThemFolks1.png" style="width:100%; cursor:pointer" onclick="document.getElementById('HHHitThemFolks1').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 1& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/HHHitThemFolks/HHHitThemFolks2.png" style="width:100%; cursor:pointer" onclick="document.getElementById('HHHitThemFolks1a').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 2 -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-blue">
-                <h6>Count 2</h6>
-              </header>
-              <img src="../img/Count/HHHitThemFolks/HHHitThemFolks3.png" style="width:100%; cursor:pointer" onclick="document.getElementById('HHHitThemFolks2').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 2& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/HHHitThemFolks/HHHitThemFolks4.png" style="width:100%; cursor:pointer" onclick="document.getElementById('HHHitThemFolks2a').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 3 -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-red">
-                <h6>Count 3</h6>
-              </header>
-              <img src="../img/Count/HHHitThemFolks/HHHitThemFolks5.png" style="width:100%; cursor:pointer" onclick="document.getElementById('HHHitThemFolks3').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 3& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/HHHitThemFolks/HHHitThemFolks6.png" style="width:100%; cursor:pointer" onclick="document.getElementById('HHHitThemFolks3a').style.display='block'"/>
-            </div>
-          </div>
-        </div>
-        <!-- Walkthrough -->
+        <!-- COUNTS -->
         <div class="w3-container w3-margin-top">
           <div class="w3-card">
-          <header class="w3-container w3-center w3-green">
-            <h5>WALKTHROUGH</h5>
-          </header>
-            <div>
-              <ul class="w3-ul">
-                <li>
-                  <span class="w3-tag w3-small w3-green">1</span> Stand with feet shoulder-width apart
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">2</span> Put both arms out in front of you in fists, and cross your left arm over your right arm
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">3</span> Reverse and cross your right arm over your left arm (imagine you are doing a reversed wolverine stance, as in palms facing down towards ground)
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">4</span> From the second cross, bring both arms out to their respective sides, while very slightly rotating shoulders counterclockwise and bringing left foot up off the ground
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">5</span> With arms out at your sides in a flexing stance (like rosie the riveter but with both arms), freeze in this flexing pose for a brief moment before leaving the stance
-                </li>
-              </ul>
+            <div class="w3-content w3-display-container">
+              <div class="w3-display-container hitthemfolksSlides">
+                <img src="../img/Count/HIPHOP/HitThemFolks/HitThemFolks1.jpg" style="width: 100%">
+                <div class="w3-display-bottommiddle w3-center w3-xlarge w3-container w3-padding w3-opacity w3-red" style="width: 100%">
+                  Count 1
+                </div>
+              </div>
+              <div class="w3-display-container hitthemfolksSlides" style="display: none;">
+                <img src="../img/Count/HIPHOP/HitThemFolks/HitThemFolks1e.jpg" style="width: 100%">
+                <div class="w3-display-bottommiddle w3-center w3-xlarge w3-container w3-padding w3-opacity w3-deep-orange" style="width: 100%">
+                  e
+                </div>
+              </div>
+              <div class="w3-display-container hitthemfolksSlides" style="display: none;">
+                <img src="../img/Count/HIPHOP/HitThemFolks/HitThemFolks1n.jpg" style="width: 100%">
+                <div class="w3-display-bottommiddle w3-center w3-xlarge w3-container w3-padding w3-opacity w3-amber w3-text-white" style="width: 100%">
+                  &
+                </div>
+              </div>
+              <div class="w3-display-container hitthemfolksSlides" style="display: none;">
+                <img src="../img/Count/HIPHOP/HitThemFolks/HitThemFolks2.jpg" style="width: 100%">
+                <div class="w3-display-bottommiddle w3-center w3-xlarge w3-container w3-padding w3-opacity w3-blue" style="width: 100%">
+                  Count 2
+                </div>
+              </div>
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
             </div>
+          </div>
+        </div>
+        <!-- TEXT -->
+        <div class="w3-container w3-padding">
+          <button onclick="openAccordion('HitThemFolksWalkthrough')" class="w3-hover-opacity w3-hover-green w3-large w3-button w3-bar w3-left-align w3-block">WALKTHROUGH</button>
+          <div id="HitThemFolksWalkthrough" class="w3-border w3-container w3-hide">
+            <ul class="w3-ul">
+              <li>
+                Stand with feet shoulder-width apart
+              </li>
+              <li>
+                Put both arms out in front of you in fists, and cross your left arm over your right arm
+              </li>
+              <li>
+                Reverse and cross your right arm over your left arm (imagine you are doing a reversed wolverine stance, as in palms facing down towards ground)
+              </li>
+              <li>
+                From the second cross, bring both arms out to their respective sides, while very slightly rotating shoulders counterclockwise and bringing left foot up off the ground
+              </li>
+              <li>
+                With arms out at your sides in a flexing stance (like rosie the riveter but with both arms), freeze in this flexing pose for a brief moment before leaving the stance
+              </li>
+            </ul>
+          </div>
+          <button onclick="openAccordion('HitThemFolksPit1')" class="w3-hover-opacity w3-hover-green w3-button w3-large w3-bar w3-left-align w3-block">Hand Reverse Hack</button>
+          <div id="HitThemFolksPit1" class="w3-border w3-container w3-hide">
+            <p>
+              To get down the motion of the hand reverse/crossover, we can take page out of the stretches swimmers perform before a relay. Without moving your feet or torso, swing your arms as far back behind your body (as if to stretch your chest) then swing them in and across your body, one over the other. Then switch. Knowing that motion, you simply alter it to look like HTF by bringing the upper arm (which changes each time alternation) more downward and criss-cross over the lower arm.
+            </p>
+          </div>
+          <button onclick="openAccordion('HitThemFolksPit2')" class="w3-border w3-container w3-hide">TIP 2</button>
+          <div id="HitThemFolksPit2" class="w3-border w3-container w3-hide">
+            <p>
+              Lorem
+            </p>
           </div>
         </div>
       </div>
@@ -456,330 +223,95 @@
       <button onclick="openAccordion('Moonshuffle')" class="w3-hover-opacity w3-hover-amber w3-hover-text-white w3-left-align w3-button w3-bar w3-xlarge w3-block">
         Moonshuffle
       </button>
-      <div id="Moonshuffle" class="w3-hide w3-container w3-margin-top w3-margin-bottom">
+      <div id="Moonshuffle" class="w3-hide w3-container">
+        <!-- GIFS -->
         <div class="w3-row-padding">
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom m12 l6">
+          <div class="w3-half w3-hover-grayscale w3-margin-top">
             <div class="w3-card">
               <img src="https://media.giphy.com/media/tJMOZXiPL9Yf3m3I8n/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('MoonshuffleMoveModal').style.display='block'"/>
-              <footer class="w3-container w3-green w3-center">
-                <h5>THE MOVE</h5>
-              </footer>
             </div>
           </div>
-          <div class="w3-col w3-hover-grayscale w3-center m12 l6">
+          <div class="w3-half w3-hover-grayscale w3-margin-top">
             <div class="w3-card">
               <img src="https://media.giphy.com/media/xThtaqnIZiPMpfuihW/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('MoonshuffleCountModal').style.display='block'"/>
-              <footer class="w3-container w3-green w3-center">
-                <h5>THE COUNT</h5>
-              </footer>
             </div>
           </div>
         </div>
-        <!-- Text Details -->
-        <div class="w3-row-padding">
-          <!-- 2nd Half -->
-          <div class="w3-container w3-half">
-            <h5>TIPS</h5>
-            <button onclick="openAccordion('MoonshufflePit1')" class="w3-block w3-button w3-hover-deep-purple w3-hover-opacity w3-left-align ">Evolve from Running Man</button>
-            <div id="MoonshufflePit1" class="w3-border w3-border-deep-purple w3-container w3-hide">
-              <p>
-                You don't necessarily have to learn a completely new move here if you know the running man. Slowly transform your running man into the moonshuffle (according to the walkthrough) and you'll have the move down pat in literally no time. Start by slowly raising your rear foot lower and lower as it comes forward to the front of your stride. Eventually you should start dragging it on its toes to the front of the stance. Once you are at that point, put enough weight on your toe stand foot that when you try to drag it forward, you end up pulling your plant foot backwards instead. Voila!
-              </p>
-            </div>
-            <button onclick="openAccordion('MoonshufflePit2')" class="w3-block w3-button w3-hover-deep-purple w3-hover-opacity w3-left-align ">Graceful Glides</button>
-            <div id="MoonshufflePit2" class="w3-border w3-border-deep-purple w3-container w3-hide">
-              <p>
-                As you slide back your flat foot, bring it back to the point where your plant (toe standing) foot would be intersecting halfway (see count pictures) each time. Slide too far back each time, and you may be having to exert too much bounce to move that far, and will likely have too much variation in the slides and your moonshuffle may look sloppy. Less is always more - you want to create the impression that you are gliding backwards.
-              </p>
-            </div>
-            <button onclick="openAccordion('MoonshufflePit3')" class="w3-block w3-button w3-hover-deep-purple w3-hover-opacity w3-left-align ">Max Slide, Min Bounce</button>
-            <div id="MoonshufflePit3" class="w3-border w3-border-deep-purple w3-container w3-hide">
-              <p>
-                The key to looking clean is to keep your movements choppy, but not bouncy. You want to appear to be gliding backwards, not bouncing up and down.
-              </p>
-            </div>
-            <button onclick="openAccordion('MoonshufflePit4')" class="w3-block w3-button w3-hover-deep-purple w3-hover-opacity w3-left-align ">Fluid vs. Rigid</button>
-            <div id="MoonshufflePit4" class="w3-border w3-border-deep-purple w3-container w3-hide">
-              <p>
-                Find the right balance between being rigid in your movements and being fluid in your slides. Trying to slide back too far or jerking with each motion will make you appear floppy and sloppy. If you're too rigid though, it won't look like you're really doing the move unless you squint. Find the right balance, and find the right amount of distance you should traverse with each slide so that each slide back is the same distance and not variable.
-              </p>
+        <!-- COUNTS -->
+        <div class="w3-container w3-margin-top">
+          <div class="w3-card">
+            <div class="w3-content w3-display-container">
+              <div class="w3-display-container moonshuffleSlides">
+                <img src="../img/Count/SHUFFLE/MOONWALKS/Moonshuffle/Moonshuffle1.jpg" style="width: 100%">
+                <div class="w3-display-bottommiddle w3-center w3-xlarge w3-container w3-padding w3-opacity w3-red" style="width: 100%">
+                  Count 1
+                </div>
+              </div>
+              <div class="w3-display-container moonshuffleSlides" style="display: none;">
+                <img src="../img/Count/SHUFFLE/MOONWALKS/Moonshuffle/Moonshuffle1n.jpg" style="width: 100%">
+                <div class="w3-display-bottommiddle w3-center w3-xlarge w3-container w3-padding w3-opacity w3-amber w3-text-white" style="width: 100%">
+                  &
+                </div>
+              </div>
+              <div class="w3-display-container moonshuffleSlides" style="display: none;">
+                <img src="../img/Count/SHUFFLE/MOONWALKS/Moonshuffle/Moonshuffle2.jpg" style="width: 100%">
+                <div class="w3-display-bottommiddle w3-center w3-xlarge w3-container w3-padding w3-opacity w3-blue" style="width: 100%">
+                  Count 2
+                </div>
+              </div>
+              <div class="w3-display-container moonshuffleSlides" style="display: none;">
+                <img src="../img/Count/SHUFFLE/MOONWALKS/Moonshuffle/Moonshuffle2n.jpg" style="width: 100%">
+                <div class="w3-display-bottommiddle w3-center w3-xlarge w3-container w3-padding w3-opacity w3-amber w3-text-white" style="width: 100%">
+                  &
+                </div>
+              </div>
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 2)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 2)">&#10095;</button>
             </div>
           </div>
-          <!-- 1st Half -->
-          <div class="w3-container w3-half">
-            <h5>PREREQUISITES</h5>
-            <ul>
+        </div>
+        <!-- TEXT -->
+        <div class="w3-container w3-padding">
+          <button onclick="openAccordion('moonshuffleWalkthrough')" class="w3-hover-opacity w3-hover-green w3-large w3-button w3-bar w3-left-align w3-block">WALKTHROUGH</button>
+          <div id="moonshuffleWalkthrough" class="w3-border w3-container w3-hide">
+            <ul class="w3-ul">
               <li>
-                Running Man
+                Start with left foot flat, right foot on toes right at your left heel
+              </li>
+              <li>
+                Slide/jostle left foot backwards until left toes are past your right toes
+              </li>
+              <li>
+                Drop down right foot flat, while raising left foot up onto toes
+              </li>
+              <li>
+                Stance is now mirroed to starting position, keep repeating
               </li>
             </ul>
           </div>
-        </div>
-        <!-- Count 1 -->
-        <div class="w3-row-padding w3-panel">
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-red">
-                <h6>Count 1</h6>
-              </header>
-              <img src="../img/Count/Moonshuffle/Moonshuffle1.png" style="width:100%; cursor:pointer" onclick="document.getElementById('Moonshuffle1').style.display='block'"/>
-            </div>
+          <button onclick="openAccordion('MoonshufflePit1')" class="w3-hover-opacity w3-hover-green w3-button w3-large w3-bar w3-left-align w3-block">Evolve from Running Man</button>
+          <div id="MoonshufflePit1" class="w3-container w3-hide">
+            <p>
+              You don't necessarily have to learn a completely new move here if you know the running man. Slowly transform your running man into the moonshuffle and you'll have the move down pat in literally no time. Start by slowly raising your rear foot lower and lower as it comes forward to the front of your stride. Eventually you should start dragging it on its toes to the front of the stance. Once you are at that point, put enough weight on your toe stand foot that when you try to drag it forward, you end up pulling your plant foot backwards instead. Voila!
+            </p>
           </div>
-          <!-- Count 1& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/Moonshuffle/Moonshuffle2.png" style="width:100%; cursor:pointer" onclick="document.getElementById('Moonshuffle1a').style.display='block'"/>
-            </div>
+          <button onclick="openAccordion('MoonshufflePit2')" class="w3-hover-opacity w3-hover-green w3-button w3-large w3-bar w3-left-align w3-block">Graceful Glides</button>
+          <div id="MoonshufflePit2" class="w3-container w3-hide">
+            <p>
+              As you slide back your flat foot, bring it back to the point where your plant (toe standing) foot would be intersecting halfway (see count pictures) each time. Slide too far back each time, and you may be having to exert too much bounce to move that far, and will likely have too much variation in the slides and your moonshuffle may look sloppy. Less is always more - you want to create the impression that you are gliding backwards.
+            </p>
           </div>
-          <!-- Count 2 -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-blue">
-                <h6>Count 2</h6>
-              </header>
-              <img src="../img/Count/Moonshuffle/Moonshuffle3.png" style="width:100%; cursor:pointer" onclick="document.getElementById('Moonshuffle2').style.display='block'"/>
-            </div>
+          <button onclick="openAccordion('MoonshufflePit3')" class="w3-hover-opacity w3-hover-green w3-button w3-large w3-bar w3-left-align w3-block">Max Slide, Min Bounce</button>
+          <div id="MoonshufflePit3" class="w3-container w3-hide">
+            <p>
+              The key to looking clean is to keep your movements choppy, but not bouncy. You want to appear to be gliding backwards, not bouncing up and down.
+            </p>
           </div>
-          <!-- Count 2& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/Moonshuffle/Moonshuffle4.png" style="width:100%; cursor:pointer" onclick="document.getElementById('Moonshuffle2a').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 3 -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-red">
-                <h6>Count 3</h6>
-              </header>
-              <img src="../img/Count/Moonshuffle/Moonshuffle5.png" style="width:100%; cursor:pointer" onclick="document.getElementById('Moonshuffle3').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 3& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/Moonshuffle/Moonshuffle6.png" style="width:100%; cursor:pointer" onclick="document.getElementById('Moonshuffle3a').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 4 -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-blue">
-                <h6>Count 4</h6>
-              </header>
-              <img src="../img/Count/Moonshuffle/Moonshuffle7.png" style="width:100%; cursor:pointer" onclick="document.getElementById('Moonshuffle4').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 4& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/Moonshuffle/Moonshuffle8.png" style="width:100%; cursor:pointer" onclick="document.getElementById('Moonshuffle4a').style.display='block'"/>
-            </div>
-          </div>
-        </div>
-        <!-- Walkthrough -->
-        <div class="w3-container w3-margin-top">
-          <div class="w3-card">
-          <header class="w3-container w3-center w3-green">
-            <h5>WALKTHROUGH</h5>
-          </header>
-            <div>
-              <ul class="w3-ul">
-                <li>
-                  <span class="w3-tag w3-small w3-green">1</span> Start with left foot flat, right foot on toes right at your left heel
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">2</span> Slide/jostle left foot backwards until left toes are past your right toes
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">3</span> Drop down right foot flat, while raising left foot up onto toes
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">4</span> Stance is now mirroed to starting position, keep repeating
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ++++++++++++++++ LoopDeLoop ++++++++++++++++ -->
-      <!-- ++++++++++++++++ Loop De Loop ++++++++++++++++ -->
-      <button onclick="openAccordion('LoopDeLoop')" class="w3-hover-opacity w3-hover-red w3-left-align w3-button w3-bar w3-xlarge w3-block">
-        LoopDeLoop
-      </button>
-      <div id="LoopDeLoop" class="w3-hide w3-container w3-margin-top w3-margin-bottom">
-        <div class="w3-row-padding">
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom m12 l6">
-            <div class="w3-card">
-              <img src="https://media.giphy.com/media/Y08EqnDMA4k5WMRBnU/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('LoopDeLoopMoveModal').style.display='block'"/>
-              <footer class="w3-container w3-green w3-center">
-                <h5>THE MOVE</h5>
-              </footer>
-            </div>
-          </div>
-          <div class="w3-col w3-hover-grayscale w3-center m12 l6">
-            <div class="w3-card">
-              <img src="https://media.giphy.com/media/xUOwG1L3uTMp07IfXG/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('LoopDeLoopCountModal').style.display='block'"/>
-              <footer class="w3-container w3-green w3-center">
-                <h5>THE COUNT</h5>
-              </footer>
-            </div>
-          </div>
-        </div>
-        <!-- Text Details -->
-        <div class="w3-row-padding">
-          <!-- 2nd Half -->
-          <div class="w3-container w3-half">
-            <h5><i class="fa fa-life-ring"></i> TIPS</h5>
-            <button onclick="openAccordion('LoopDeLoopPit1')" class="w3-block w3-button w3-hover-deep-purple w3-hover-opacity w3-left-align ">Figure 8</button>
-            <div id="LoopDeLoopPit1" class="w3-border w3-border-deep-purple w3-container w3-hide">
-              <p>
-                Take note of how your kick leg is making a sideways figure 8 (when viewed from your side), with your plant foot intersecting the middle.
-              </p>
-            </div>
-            <button onclick="openAccordion('LoopDeLoopPit2')" class="w3-block w3-button w3-hover-deep-purple w3-hover-opacity w3-left-align ">Center of Gravity</button>
-            <div id="LoopDeLoopPit2" class="w3-border w3-border-deep-purple w3-container w3-hide">
-              <p>
-                As your right leg kicks in a figure 8 motion, your left leg will want to slide back and forth to balance out your stance. Your legs will always be moving in the inverse direction of the other; i.e., as your right (kick) foot is moving outward in either direction, your left (plant) foot will move outwards in the opposite direction. As your kick leg moves inwards from either front or rear, your plant leg will slide inwards from the opposite. Getting these slides of your plant foot takes practice and lots of patience.
-              </p>
-            </div>
-          </div>
-          <!-- 1st Half -->
-          <div class="w3-container w3-half">
-            <h5><i class="fa fa-cubes"></i> PREREQUISITES</h5>
-            <ul>
-              <li>
-                Stutter, Rear
-              </li>
-              <li>
-                Stutter, Front
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- Count 1 -->
-        <div class="w3-row-padding w3-panel">
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-red">
-                <h6>Count 1</h6>
-              </header>
-              <img src="../img/Count/LoopDeLoop/LoopDeLoop1.png" style="width:100%; cursor:pointer" onclick="document.getElementById('LoopDeLoop1').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 1& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/LoopDeLoop/LoopDeLoop2.png" style="width:100%; cursor:pointer" onclick="document.getElementById('LoopDeLoop1a').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 2 -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-blue">
-                <h6>Count 2</h6>
-              </header>
-              <img src="../img/Count/LoopDeLoop/LoopDeLoop3.png" style="width:100%; cursor:pointer" onclick="document.getElementById('LoopDeLoop2').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 2& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/LoopDeLoop/LoopDeLoop4.png" style="width:100%; cursor:pointer" onclick="document.getElementById('LoopDeLoop2a').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 3 -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-red">
-                <h6>Count 3</h6>
-              </header>
-              <img src="../img/Count/LoopDeLoop/LoopDeLoop5.png" style="width:100%; cursor:pointer" onclick="document.getElementById('LoopDeLoop3').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 3& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/LoopDeLoop/LoopDeLoop6.png" style="width:100%; cursor:pointer" onclick="document.getElementById('LoopDeLoop3a').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 4 -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-blue">
-                <h6>Count 4</h6>
-              </header>
-              <img src="../img/Count/LoopDeLoop/LoopDeLoop7.png" style="width:100%; cursor:pointer" onclick="document.getElementById('LoopDeLoop4').style.display='block'"/>
-            </div>
-          </div>
-          <!-- Count 4& -->
-          <div class="w3-col w3-hover-grayscale w3-margin-bottom s6 m4 l3">
-            <div class="w3-card">
-              <header class="w3-container w3-center w3-amber w3-text-white">
-                <h6>Count &</h6>
-              </header>
-              <img src="../img/Count/LoopDeLoop/LoopDeLoop8.png" style="width:100%; cursor:pointer" onclick="document.getElementById('LoopDeLoop4a').style.display='block'"/>
-            </div>
-          </div>
-        </div>
-        <!-- Walkthrough -->
-        <div class="w3-container w3-margin-top">
-          <div class="w3-card">
-          <header class="w3-container w3-center w3-green">
-            <h5>WALKTHROUGH</h5>
-          </header>
-            <div>
-              <ul class="w3-ul">
-                <li>
-                  <span class="w3-tag w3-small w3-green">1</span> Start with left foot in front / flat of stance and right foot behind / on toes
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">2</span> Bring left foot back to middle of stance, flat, right foot up forward tucked next to shin
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">3</span> Push left foot forwards to front of stance, and fall backwards landing right foot flat at back
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">4</span> Bring left foot back again to middle of stance and right foot up next to shin
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">5</span> Kick right foot backwards, brushing the ground slightly and continuing up right foot in a upwards circular motion, while left foot moves forward slightly (opposite direction of kick)
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">6</span> As right foot comes up from brushing ground, bring to top center of stance, while left foot comes to center of stance as well
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">7</span> Kick right foot downward/forwards, brushing ground while left foot moves backwards slightly for balance
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">8</span> As right foot comes up from brush and back to center of stance in circular motion, left foot comes back to center of stance
-                </li>
-                <li>
-                  <span class="w3-tag w3-small w3-green">8</span> Repeat kicks as you please
-                </li>
-              </ul>
-            </div>
+          <button onclick="openAccordion('MoonshufflePit4')" class="w3-hover-opacity w3-hover-green w3-button w3-large w3-bar w3-left-align w3-block">Fluid vs. Rigid</button>
+          <div id="MoonshufflePit4" class="w3-container w3-hide">
+            <p>
+              Find the right balance between being rigid in your movements and being fluid in your slides. Trying to slide back too far or jerking with each motion will make you appear floppy and sloppy. If you're too rigid though, it won't look like you're really doing the move unless you squint. Find the right balance, and find the right amount of distance you should traverse with each slide so that each slide back is the same distance and not variable.
+            </p>
           </div>
         </div>
       </div>
@@ -803,16 +335,40 @@
     </div>
     <div class="w3-row-padding">
       <div class="w3-col s6 l3 w3-margin-bottom w3-hover-opacity">
-        <img class="w3-bottombar w3-border-amber" src="https://media.giphy.com/media/300ZuyC7pAD6lvJYdj/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('CCMoveModal').style.display='block'"/>
+        <img class="w3-bottombar w3-border-amber" src="https://media.giphy.com/media/300ZuyC7pAD6lvJYdj/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('CrissCrossMoveModal').style.display='block'"/>
       </div>
       <div class="w3-col s6 l3 w3-margin-bottom w3-hover-opacity">
-        <img class="w3-bottombar w3-border-amber" src="https://media.giphy.com/media/bbSwRLYyG5UPxnzovu/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('TwisterMoveModal').style.display='block'"/>
+        <img class="w3-bottombar w3-border-amber" src="https://media.giphy.com/media/3aXfINwcEbMfe9STbU/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('FlyFeetMoveModal').style.display='block'"/>
+      </div>
+      <div class="w3-col s6 l3 w3-margin-bottom w3-hover-opacity">
+        <img class="w3-bottombar w3-border-green" src="https://media.giphy.com/media/yuGJiU48gnKiPytVZ5/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('HitThemFolksMoveModal').style.display='block'"/>
+      </div>
+      <div class="w3-col s6 l3 w3-margin-bottom w3-hover-opacity">
+        <img class="w3-bottombar w3-border-red" src="https://media.giphy.com/media/tJMOZXiPL9Yf3m3I8n/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('MoonshuffleMoveModal').style.display='block'"/>
+      </div>
+      <div class="w3-col s6 l3 w3-margin-bottom w3-hover-opacity">
+        <img class="w3-bottombar w3-border-green" src="https://media.giphy.com/media/37QNggk9Ww5XnBXuM8/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('ShootMoveModal').style.display='block'"/>
+      </div>
+      <div class="w3-col s6 l3 w3-margin-bottom w3-hover-opacity">
+        <img class="w3-bottombar w3-border-red" src="https://media.giphy.com/media/406WpMJfFvMtWo88z9/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('SlyceMoveModal').style.display='block'"/>
+      </div>
+      <div class="w3-col s6 l3 w3-margin-bottom w3-hover-opacity">
+        <img class="w3-bottombar w3-border-amber" src="https://media.giphy.com/media/tZB5uJ4m4jdf2KqQzv/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('SplashHouseMoveModal').style.display='block'"/>
       </div>
       <div class="w3-col s6 l3 w3-margin-bottom w3-hover-opacity">
         <img class="w3-bottombar w3-border-amber" src="https://media.giphy.com/media/7FgZM5MxthZuxbpD0q/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('SweepMoveModal').style.display='block'"/>
       </div>
       <div class="w3-col s6 l3 w3-margin-bottom w3-hover-opacity">
-        <img class="w3-bottombar w3-border-red" src="https://media.giphy.com/media/tJMOZXiPL9Yf3m3I8n/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('MoonshuffleMoveModal').style.display='block'"/>
+        <img class="w3-bottombar w3-border-amber" src="https://media.giphy.com/media/5qFDygSshK4HurugfX/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('ToeHeelTwistMoveModal').style.display='block'"/>
+      </div>
+      <div class="w3-col s6 l3 w3-margin-bottom w3-hover-opacity">
+        <img class="w3-bottombar w3-border-amber" src="https://media.giphy.com/media/cYj5UJDLxhadeAByTL/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('TSteppinMoveModal').style.display='block'"/>
+      </div>
+      <div class="w3-col s6 l3 w3-margin-bottom w3-hover-opacity">
+        <img class="w3-bottombar w3-border-amber" src="https://media.giphy.com/media/5YbO8TvC09NpBegR15/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('TurnNBurnMoveModal').style.display='block'"/>
+      </div>
+      <div class="w3-col s6 l3 w3-margin-bottom w3-hover-opacity">
+        <img class="w3-bottombar w3-border-amber" src="https://media.giphy.com/media/bbSwRLYyG5UPxnzovu/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('TwisterMoveModal').style.display='block'"/>
       </div>
     </div>
     <div class="w3-panel">
@@ -983,19 +539,13 @@
 </div>
 
 <!-- MOVE MODALS -->
-<div id="RMMoveModal" class="w3-modal" onclick="this.style.display='none'">
+<div id="RunningManMoveModal" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
     <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
     <img src="https://media.giphy.com/media/1dI01pPzF5ystuJCHl/giphy.gif" style="width:100%">
   </div>
 </div>
-<div id="LaunchBackMoveModal" class="w3-modal" onclick="this.style.display='none'">
-  <div class="w3-modal-content w3-animate-zoom">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <img src="https://media.giphy.com/media/MRXmySP4fEpSowInOy/giphy.gif" style="width:100%">
-  </div>
-</div>
-<div id="HHHitThemFolksMoveModal" class="w3-modal" onclick="this.style.display='none'">
+<div id="HitThemFolksMoveModal" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
     <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
     <img src="https://media.giphy.com/media/yuGJiU48gnKiPytVZ5/giphy.gif" style="width:100%">
@@ -1007,29 +557,65 @@
     <img src="https://media.giphy.com/media/tJMOZXiPL9Yf3m3I8n/giphy.gif" style="width:100%">
   </div>
 </div>
-<div id="LoopDeLoopMoveModal" class="w3-modal" onclick="this.style.display='none'">
-  <div class="w3-modal-content w3-animate-zoom">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <img src="https://media.giphy.com/media/Y08EqnDMA4k5WMRBnU/giphy.gif" style="width:100%">
-  </div>
-</div>
 
-<div id="TwisterMoveModal" class="w3-modal" onclick="this.style.display='none'">
-  <div class="w3-modal-content w3-animate-zoom">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <img src="https://media.giphy.com/media/bbSwRLYyG5UPxnzovu/giphy.gif" style="width:100%">
-  </div>
-</div>
-<div id="CCMoveModal" class="w3-modal" onclick="this.style.display='none'">
+<div id="CrissCrossMoveModal" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
     <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
     <img src="https://media.giphy.com/media/300ZuyC7pAD6lvJYdj/giphy.gif" style="width:100%">
+  </div>
+</div>
+<div id="FlyFeetMoveModal" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <img src="https://media.giphy.com/media/3aXfINwcEbMfe9STbU/giphy.gif" style="width:100%">
+  </div>
+</div>
+<div id="SlyceMoveModal" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <img src="https://media.giphy.com/media/406WpMJfFvMtWo88z9/giphy.gif" style="width:100%">
+  </div>
+</div>
+<div id="ShootMoveModal" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <img src="https://media.giphy.com/media/37QNggk9Ww5XnBXuM8/giphy.gif" style="width:100%">
+  </div>
+</div>
+<div id="SplashHouseMoveModal" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <img src="https://media.giphy.com/media/tZB5uJ4m4jdf2KqQzv/giphy.gif" style="width:100%">
   </div>
 </div>
 <div id="SweepMoveModal" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
     <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
     <img src="https://media.giphy.com/media/7FgZM5MxthZuxbpD0q/giphy.gif" style="width:100%">
+  </div>
+</div>
+<div id="ToeHeelTwistMoveModal" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <img src="https://media.giphy.com/media/5qFDygSshK4HurugfX/giphy.gif" style="width:100%">
+  </div>
+</div>
+<div id="TSteppinMoveModal" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <img src="https://media.giphy.com/media/cYj5UJDLxhadeAByTL/giphy.gif" style="width:100%">
+  </div>
+</div>
+<div id="TurnNBurnMoveModal" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <img src="https://media.giphy.com/media/5YbO8TvC09NpBegR15/giphy.gif" style="width:100%">
+  </div>
+</div>
+<div id="TwisterMoveModal" class="w3-modal" onclick="this.style.display='none'">
+  <div class="w3-modal-content w3-animate-zoom">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <img src="https://media.giphy.com/media/bbSwRLYyG5UPxnzovu/giphy.gif" style="width:100%">
   </div>
 </div>
 
@@ -1040,282 +626,19 @@
     <img src="https://media.giphy.com/media/xThtaqnIZiPMpfuihW/giphy.gif" style="width:100%">
   </div>
 </div>
-<div id="RMCountModal" class="w3-modal" onclick="this.style.display='none'">
+<div id="RunningManCountModal" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
     <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
     <img src="https://media.giphy.com/media/nqCdLv4JTLfVPzjv9f/giphy.gif" style="width:100%">
   </div>
 </div>
-<div id="LoopDeLoopCountModal" class="w3-modal" onclick="this.style.display='none'">
-  <div class="w3-modal-content w3-animate-zoom">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <img src="https://media.giphy.com/media/xUOwG1L3uTMp07IfXG/giphy.gif" style="width:100%">
-  </div>
-</div>
-<div id="LaunchBackCountModal" class="w3-modal" onclick="this.style.display='none'">
-  <div class="w3-modal-content w3-animate-zoom">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <img src="https://media.giphy.com/media/jVFqgvGY4ENEyAfxEU/giphy.gif" style="width:100%">
-  </div>
-</div>
-<div id="HHHitThemFolksCountModal" class="w3-modal" onclick="this.style.display='none'">
+<div id="HitThemFolksCountModal" class="w3-modal" onclick="this.style.display='none'">
   <div class="w3-modal-content w3-animate-zoom">
     <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
     <img src="https://media.giphy.com/media/1ncTGSMZU73XCJdN83/giphy.gif" style="width:100%">
   </div>
 </div>
-<!-- PIC MODALS -->
-<div class="hitThemFolks">
-  <!-- Modal Count 1 -->
-  <div id="HHHitThemFolks1" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="../img/Count/HHHitThemFolks/HHHitThemFolks1.png" style="width:100%">
-    </div>
-  </div>
-  <!-- Modal Count 1& -->
-  <div id="HHHitThemFolks1a" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="../img/Count/HHHitThemFolks/HHHitThemFolks2.png" style="width:100%">
-    </div>
-  </div>
-  <!-- Modal Count 2 -->
-  <div id="HHHitThemFolks2" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="../img/Count/HHHitThemFolks/HHHitThemFolks3.png" style="width:100%">
-    </div>
-  </div>
-  <!-- Modal Count 2& -->
-  <div id="HHHitThemFolks2a" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="../img/Count/HHHitThemFolks/HHHitThemFolks4.png" style="width:100%">
-    </div>
-  </div>
-  <!-- Modal Count 3 -->
-  <div id="HHHitThemFolks3" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="../img/Count/HHHitThemFolks/HHHitThemFolks5.png" style="width:100%">
-    </div>
-  </div>
-  <!-- Modal Count 3& -->
-  <div id="HHHitThemFolks3a" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="../img/Count/HHHitThemFolks/HHHitThemFolks6.png" style="width:100%">
-    </div>
-  </div>
-</div>
-<div class="LaunchBack">
-  <!-- Modal Count 1 -->
-  <div id="LaunchBack1" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="../img/Count/LaunchBack/LaunchBack1.png" style="width:100%">
-    </div>
-  </div>
-  <!-- Modal Count 1& -->
-  <div id="LaunchBack1a" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="../img/Count/LaunchBack/LaunchBack2.png" style="width:100%">
-    </div>
-  </div>
-  <!-- Modal Count 2 -->
-  <div id="LaunchBack2" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="../img/Count/LaunchBack/LaunchBack3.png" style="width:100%">
-    </div>
-  </div>
-  <!-- Modal Count 2& -->
-  <div id="LaunchBack2a" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="../img/Count/LaunchBack/LaunchBack4.png" style="width:100%">
-    </div>
-  </div>
-  <!-- Modal Count 3 -->
-  <div id="LaunchBack3" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="../img/Count/LaunchBack/LaunchBack5.png" style="width:100%">
-    </div>
-  </div>
-  <!-- Modal Count 3& -->
-  <div id="LaunchBack3a" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="../img/Count/LaunchBack/LaunchBack6.png" style="width:100%">
-    </div>
-  </div>
-  <!-- Modal Count 4 -->
-  <div id="LaunchBack4" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="../img/Count/LaunchBack/LaunchBack7.png" style="width:100%">
-    </div>
-  </div>
-  <!-- Modal Count 4& -->
-  <div id="LaunchBack4a" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="../img/Count/LaunchBack/LaunchBack8.png" style="width:100%">
-    </div>
-  </div>
-</div>
-<div class="Moonshuffle">
-  <div id="Moonshuffle1" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/Moonshuffle/Moonshuffle1.png" style="width:100%">
-    </div>
-  </div>
-  <div id="Moonshuffle1a" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/Moonshuffle/Moonshuffle2.png" style="width:100%">
-    </div>
-  </div>
-  <div id="Moonshuffle2" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/Moonshuffle/Moonshuffle3.png" style="width:100%">
-    </div>
-  </div>
-  <div id="Moonshuffle2a" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/Moonshuffle/Moonshuffle4.png" style="width:100%">
-    </div>
-  </div>
-  <div id="Moonshuffle3" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/Moonshuffle/Moonshuffle5.png" style="width:100%">
-    </div>
-  </div>
-  <div id="Moonshuffle3a" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/Moonshuffle/Moonshuffle6.png" style="width:100%">
-    </div>
-  </div>
-  <div id="Moonshuffle4" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/Moonshuffle/Moonshuffle7.png" style="width:100%">
-    </div>
-  </div>
-  <div id="Moonshuffle4a" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/Moonshuffle/Moonshuffle8.png" style="width:100%">
-    </div>
-  </div>
-</div>
-<div class="RearLoopDeLoop">
-  <div id="LoopDeLoop1" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/LoopDeLoop/LoopDeLoop1.png" style="width:100%">
-    </div>
-  </div>
-  <div id="LoopDeLoop1a" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/LoopDeLoop/LoopDeLoop2.png" style="width:100%">
-    </div>
-  </div>
-  <div id="LoopDeLoop2" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/LoopDeLoop/LoopDeLoop3.png" style="width:100%">
-    </div>
-  </div>
-  <div id="LoopDeLoop2a" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/LoopDeLoop/LoopDeLoop4.png" style="width:100%">
-    </div>
-  </div>
-  <div id="LoopDeLoop3" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/LoopDeLoop/LoopDeLoop5.png" style="width:100%">
-    </div>
-  </div>
-  <div id="LoopDeLoop3a" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/LoopDeLoop/LoopDeLoop6.png" style="width:100%">
-    </div>
-  </div>
-  <div id="LoopDeLoop4" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="../img/Count/LoopDeLoop/LoopDeLoop7.png" style="width:100%">
-    </div>
-  </div>
-  <div id="LoopDeLoop4a" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/LoopDeLoop/LoopDeLoop8.png" style="width:100%">
-    </div>
-  </div>
-</div>
-<div class="RunningMans">
-  <div id="RM1" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/RunningMan/RunningMan1.png" style="width:100%">
-    </div>
-  </div>
-  <div id="RM1a" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/RunningMan/RunningMan2.png" style="width:100%">
-    </div>
-  </div>
-  <div id="RM2" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/RunningMan/RunningMan3.png" style="width:100%">
-    </div>
-  </div>
-  <div id="RM2a" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/RunningMan/RunningMan4.png" style="width:100%">
-    </div>
-  </div>
-  <div id="RM3" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/RunningMan/RunningMan5.png" style="width:100%">
-    </div>
-  </div>
-  <div id="RM3a" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/RunningMan/RunningMan6.png" style="width:100%">
-    </div>
-  </div>
-  <div id="RM4" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/RunningMan/RunningMan7.png" style="width:100%">
-    </div>
-  </div>
-  <div id="RM4a" class="w3-modal" onclick="this.style.display='none'">
-    <div class="w3-modal-content w3-animate-zoom">
-      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-      <img src="../img/Count/RunningMan/RunningMan8.png" style="width:100%">
-    </div>
-  </div>
-</div>
+
 
 <footer>
     <% include ../partials/footer %>
