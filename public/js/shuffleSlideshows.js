@@ -1,6 +1,6 @@
 var slideIndex = [1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1, 1,1,1,1,1, 1,1];
 var slideId = ["corkscrewSlides",
-  "dropdownsSlides",
+  "dropdownSlides",
   "moonshuffleSlides",
   "moonwalkSlides",
   "goofystepSlides",
