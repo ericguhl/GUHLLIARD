@@ -2,23 +2,17 @@
 <button onclick="openAccordion('Moonshuffle')" class="w3-hover-opacity w3-hover-amber w3-hover-text-white w3-left-align w3-button w3-bar w3-xlarge w3-block">
   Moonshuffle
 </button>
-<div id="Moonshuffle" class="w3-hide w3-container">
+<div id="Moonshuffle" class="w3-hide w3-container w3-margin-bottom">
   <!-- GIFS -->
   <div class="w3-row-padding">
     <div class="w3-half w3-hover-grayscale w3-margin-top">
-      <div class="w3-card">
+      <div class="w3-card w3-bottombar w3-border-amber">
         <img src="https://media.giphy.com/media/tJMOZXiPL9Yf3m3I8n/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('MoonshuffleMoveModal').style.display='block'"/>
-        <footer class="w3-container w3-amber w3-text-white w3-center">
-          <h5>THE MOVE</h5>
-        </footer>
       </div>
     </div>
     <div class="w3-half w3-hover-grayscale w3-margin-top">
-      <div class="w3-card">
+      <div class="w3-card w3-bottombar w3-border-amber">
         <img src="https://media.giphy.com/media/xThtaqnIZiPMpfuihW/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('MoonshuffleCountModal').style.display='block'"/>
-        <footer class="w3-container w3-amber w3-text-white w3-center">
-          <h5>THE COUNT</h5>
-        </footer>
       </div>
     </div>
   </div>
@@ -56,7 +50,7 @@
     </div>
   </div>
   <!-- TEXT -->
-  <div class="w3-container w3-padding">
+  <%# <div class="w3-container w3-padding">
     <button onclick="openAccordion('moonshuffleWalkthrough')" class="w3-hover-opacity w3-hover-green w3-large w3-button w3-bar w3-left-align w3-block">WALKTHROUGH</button>
     <div id="moonshuffleWalkthrough" class="w3-border w3-container w3-hide">
       <ul class="w3-ul">
@@ -98,28 +92,22 @@
         Find the right balance between being rigid in your movements and being fluid in your slides. Trying to slide back too far or jerking with each motion will make you appear floppy and sloppy. If you're too rigid though, it won't look like you're really doing the move unless you squint. Find the right balance, and find the right amount of distance you should traverse with each slide so that each slide back is the same distance and not variable.
       </p>
     </div>
-  </div>
+  </div> %>
 </div>
 <!-- ++++++++++++++++ Moonwalk ++++++++++++++++ -->
 <button onclick="openAccordion('Moonwalk')" class="w3-hover-opacity w3-hover-deep-purple w3-left-align w3-button w3-bar w3-xlarge w3-block">
   Moonwalk
 </button>
-<div id="Moonwalk" class="w3-hide w3-container">
+<div id="Moonwalk" class="w3-hide w3-container w3-margin-bottom">
   <div class="w3-row-padding">
     <div class="w3-half w3-hover-grayscale w3-margin-top">
-      <div class="w3-card">
+      <div class="w3-card w3-bottombar w3-border-deep-purple">
         <img src="https://media.giphy.com/media/7SEKUSXG0W0LIufMea/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('MoonwalkMoveModal').style.display='block'"/>
-        <footer class="w3-container w3-deep-purple w3-center">
-          <h5>THE MOVE</h5>
-        </footer>
       </div>
     </div>
     <div class="w3-half w3-hover-grayscale w3-margin-top">
-      <div class="w3-card">
+      <div class="w3-card w3-bottombar w3-border-deep-purple">
         <img src="https://media.giphy.com/media/xUOwGlYid2lRbBJFJK/giphy.gif" style="width: 100%; cursor:pointer" onclick="document.getElementById('MoonwalkCountModal').style.display='block'"/>
-        <footer class="w3-container w3-deep-purple w3-center">
-          <h5>THE COUNT</h5>
-        </footer>
       </div>
     </div>
   </div>
@@ -154,44 +142,6 @@
         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 3)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 3)">&#10095;</button>
       </div>
-    </div>
-  </div>
-  <!-- TEXT -->
-  <div class="w3-container w3-padding">
-    <button onclick="openAccordion('moonwalkWalkthrough')" class="w3-hover-opacity w3-hover-green w3-large w3-button w3-bar w3-left-align w3-block">WALKTHROUGH</button>
-    <div id="moonwalkWalkthrough" class="w3-container w3-hide">
-      <ul class="w3-ul">
-        <li>
-          Lorem
-        </li>
-        <li>
-          Ipsum
-        </li>
-        <li>
-          Dolor
-        </li>
-        <li>
-          Es
-        </li>
-      </ul>
-    </div>
-    <button onclick="openAccordion('MoonwalkPit1')" class="w3-hover-opacity w3-hover-green w3-button w3-large w3-bar w3-left-align w3-block">Strong Toes</button>
-    <div id="MoonwalkPit1" class="w3-container w3-hide">
-      <p>
-        Before you can do the moonwalk, you should be able to balance on your toes for a least a few seconds. Practice toe stands by balancing against a wall for 30 seconds (or however long you can hold) at a time. Only use the wall to push yourself back into balance - they serve as training wheels, and eventually you should take them off. Once you stregnthen the muscles in your toes, you'll be able to pull yourself backwards by the toes in the moonwalk.
-      </p>
-    </div>
-    <button onclick="openAccordion('MoonwalkPit2')" class="w3-hover-opacity w3-hover-green w3-button w3-large w3-bar w3-left-align w3-block">Snappy Swaps</button>
-    <div id="MoonwalkPit2" class="w3-container w3-hide">
-      <p>
-        Each time you swap feet, you should accentuate the swap by stomping with the up foot and jutting the down foot upward (bending your knees for exaggeration).
-      </p>
-    </div>
-    <button onclick="openAccordion('MoonwalkPit3')" class="w3-hover-opacity w3-hover-green w3-button w3-large w3-bar w3-left-align w3-block">Goofy Moon</button>
-    <div id="MoonwalkPit3" class="w3-container w3-hide">
-      <p>
-        With each stride, your traveling foot (the one being pulled back) should come past your plant foot all the way past where the plant foot's heel will land. If your stride is too short, your moonwalk will look goofy, as if someone were doing it as a parody. If your stride is too long, you'll lose your balance more easily. Find the right stride length for you to stay in count, balanced, and snappy - but absolutely follow the toe-heel distance guideline.
-      </p>
     </div>
   </div>
 </div>
